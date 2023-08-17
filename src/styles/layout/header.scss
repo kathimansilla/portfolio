@@ -1,0 +1,40 @@
+.header {
+  background-color: #000000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  &__logo {
+    width: 30px;
+    background-color: white;
+  }
+  &__nav {
+    display: flex;
+    gap: 5px;
+  }
+}
+
+.form {
+  display: flex;
+  gap: 5px;
+}
+.ul {
+  display: flex;
+  gap: 5px;
+  &__cvBtn {
+    background-color: #000000;
+    color: white;
+  }
+  &__linkedinLogo {
+    width: 30px;
+    background-color: white;
+  }
+  &__twitterLogo {
+    width: 30px;
+    background-color: white;
+  }
+  &__contactBtn {
+    background-color: #000000;
+    color: white;
+  }
+}
