@@ -1,13 +1,17 @@
 import '../styles/App.scss';
 import Header from './Header';
-import Main from './Main';
+import Main from './Hero';
+import ProjectSection from './ProjectSection';
 import Footer from './Footer';
 
 function App() {
   return (
     <div className="main">
       <Header />
-      <Main />
+      <main className="main">
+        <Main />
+        <ProjectSection/>
+      </main>
       <Footer />
     </div>
   );

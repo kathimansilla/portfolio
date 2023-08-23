@@ -1,13 +1,16 @@
-const Main = () => {
-  return (
-    <main className="main">
-      <section className="main__hero">
-        <h1 className="header__title">Katherina Mansilla</h1>
-        <h2 className="header__subTitle">Full-stack Developer Web</h2>
+const ProjectSection = () => {
+    return (<>
+      <section className='projectSection'>
+        <h3 className='projectSection__title'>Projects</h3>
+        <section className='projects'>
+          <div className="projects__item"></div>
+          <div className="projects__item"></div>
+          <div className="projects__item"></div>
+        </section>
       </section>
-      <section className="navContainer">
+    
+    {/*<section className="navContainer">
         <button className="navContainer__projects">Projects</button>
-        <button className="navContainer__cv">CV</button>
         <form className="formContainer">
           <label htmlFor="formContainer__tools">Tools</label>
           <input
@@ -71,9 +74,8 @@ const Main = () => {
           src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg"
           alt="mongodb"
         />
-      </section>
-    </main>
-  );
+      </section>*/}
+      </>);
 };
 
-export default Main;
+export default ProjectSection;

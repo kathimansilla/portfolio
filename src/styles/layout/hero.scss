@@ -1,0 +1,29 @@
+.main {
+    &__link {
+        text-decoration: none;
+    }
+    &__hero {
+        background-color: black;
+        height: 35vh;
+        color: aquamarine;
+        font-family: 'Courier New', Courier, monospace;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__title {
+            font-size: 1.8rem;
+        }
+        &__subTitle {
+            font-size: 1.2rem;
+        }
+        &__aboutMeBtn {
+            margin-top: 20px;
+            border: none;
+            background-color: black;
+            font-family: $fontGeneral;
+            color: aquamarine;
+            cursor: pointer;
+        }
+    }
+}

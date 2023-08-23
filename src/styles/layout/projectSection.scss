@@ -1,0 +1,26 @@
+.projectSection {
+  height: 49vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  &__title {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 15px;
+  }
+}
+
+.projects {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin: 30px 100px 40px;
+  &__item {
+    background: aquamarine;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
