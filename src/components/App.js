@@ -1,19 +1,19 @@
 import '../styles/App.scss';
 import Header from './Header';
-import Main from './Hero';
+import Hero from './Hero';
 import ProjectSection from './ProjectSection';
 import Footer from './Footer';
 
 function App() {
   return (
-    <div className="main">
+    <>
       <Header />
-      <main className="main">
-        <Main />
+      <main>
+        <Hero />
         <ProjectSection/>
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
 
