@@ -12,26 +12,32 @@
       flex-direction: column;
       align-items: center;
       gap: 10px;
-      color: aquamarine;
-      transition: color 0.3s ease;
+      color: azure;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
       & .title {
         font-size: 1.5rem;
         &:hover {
-          color: rgb(200, 250, 233);
+          color: gray;
+          //text-shadow: 1px 0px 1px rgb(255, 255, 255);
         }
       }
       & .subTitle {
         font-size: 1.2rem;
         &:hover {
-          color: rgb(200, 250, 233);
+          color: gray;
         }
       }
       & .aboutMeBtn {
         border: none;
         background-color: black;
-        color: aquamarine;
+        color: white;
+        margin-top: 15px;
         &:hover {
-          color: rgb(200, 250, 233);
+          color: gray;
+          background-color: white;
+          border: solid 2px white;
+          border-radius: 20%;
+          padding: 3px 7px;
         }
       }
     }
@@ -44,22 +50,22 @@
     &__item {
       width: 40px;
       &:hover {
-        transform: scale(3);
-        background-color: rgb(80, 80, 80);
+        transform: scale(2);
         margin: 10px;
       }
       &--width1 {
         width: 50px;
         &:hover {
-          transform: scale(2.5);
-          background-color: rgb(80, 80, 80);
+          transform: scale(1.8);
+          margin: 10px;
         }
       }
       &--width2 {
         width: 90px;
         &:hover {
-          transform: scale(2.5);
-          background-color: rgb(80, 80, 80);
+          transform: scale(1.8);
+          background-color: rgb(13, 13, 13);
+          margin: 10px;
         }
       }
     }
