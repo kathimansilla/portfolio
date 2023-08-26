@@ -1,5 +1,7 @@
 # Katherina Mansilla | Portfolio
 
+⛏ Under construction page
+
 ## Full-stack Web Developer 💻 📱 🎯
 #### Graduate of Adalab's web bootcamp 2023
 
