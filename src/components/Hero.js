@@ -1,3 +1,5 @@
+import mongoDBLogo from "../images/mongodblogo.png";
+
 const Main = () => {
   return (
       <section className="hero">
@@ -51,7 +53,8 @@ const Main = () => {
         />
         <img
           className="hero__tools__item--width2"
-          src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg"
+          src={mongoDBLogo}
+          /*src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg"*/
           alt="mongodb"
         />
         </div>
