@@ -1,6 +1,19 @@
 import linkedin from '../images/linkedin.svg';
 import twitter from '../images/square-x-twitter.svg';
-const Header = () => {
+const Header = ( {toggleTools, showSS} ) => {
+
+//functions
+const handleClickTools = (ev) => {
+  ev.preventDefault();
+  toggleTools();
+}
+
+const handleClickSS = (ev) => {
+  ev.preventDefault();
+  var click = true;
+  showSS(click);
+}
+
   return (
     <header className="header">
       <div className="header__logo">
@@ -11,10 +24,10 @@ const Header = () => {
       <nav className="header__nav">
         <ul className="ul">
           <li>
-            <button className='ul__toolsBtn'>Tools</button>
+            <button className='ul__toolsBtn' onClick={handleClickTools}>Tools</button>
           </li>
           <li>
-            <button className='ul__softSkillsBtn'>Soft Skills</button>
+            <button className='ul__softSkillsBtn' onClick={handleClickSS}>Soft Skills</button>
           </li>
           <li>
             <a
