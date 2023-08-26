@@ -12,15 +12,17 @@
 .projects {
   height: 100vh;
   display: grid;
-  grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
   margin: 30px 100px 40px;
-  &__item {
-    background: aquamarine;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  overflow: hidden;
+  &__container {
+    overflow: hidden;
+    width: 350px;
+    height: 350px;
+    &__item {
+      max-width: 100%;
+      max-height: 100%;
+    }
   }
 }

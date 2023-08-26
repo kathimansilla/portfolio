@@ -1,80 +1,25 @@
+import projectA1 from '../images/project-alone-1.jpeg';
+import projectA2 from '../images/project-alone-2.jpeg';
+import projectA3 from '../images/project-alone-3.jpeg';
+import projectA4 from '../images/project-alone-4.jpeg';
+import project1 from '../images/project-team-1.jpeg';
+import project2 from '../images/project-team-2.jpeg';
+import project4 from '../images/project-team-4.jpeg';
+
 const ProjectSection = () => {
     return (<>
       <section className='projectSection'>
         <h3 className='projectSection__title'>Projects</h3>
         <section className='projects'>
-          <div className="projects__item"></div>
-          <div className="projects__item"></div>
-          <div className="projects__item"></div>
+          <div className='projects__container'><a href="https://github.com/Adalab/modulo-4-evaluacion-final-kathimansilla" className="linkProject" target="_blank" rel="noreferrer"><img src={projectA4} className="projects__container__item" alt="project alone 4" /></a></div>
+          <div className='projects__container'><a href="https://github.com/Adalab/modulo-3-evaluacion-final-kathimansilla" className="linkProject" target="_blank" rel="noreferrer"><img src={projectA3} className="projects__container__item" alt="project alone 3" /></a></div>
+          <div className='projects__container'><a href="https://github.com/Adalab/project-promo-t-module-4-team-4" className="linkProject" target="_blank" rel="noreferrer"><img src={project4} className="projects__container__item" alt="project 2" /></a></div>
+          {/*<div className='projects__container'><a href="https://github.com/Adalab/project-promo-T-module-2-team-4" className="linkProject" target="_blank" rel="noreferrer"><img src={project2} className="projects__container__item" alt="project alone 2" /></a></div>
+          <div className='projects__container'><a href="https://github.com/Adalab/modulo-2-evaluacion-final-kathimansilla" className="linkProject" target="_blank" rel="noreferrer"><img src={projectA2} className="projects__container__item" alt="project 1" /></a></div>
+          <div className='projects__container'><a href="https://github.com/Adalab/project-promo-t-module-1-team-2" className="linkProject" target="_blank" rel="noreferrer"><img src={project1} className="projects__container__item" alt="project alone 1" /></a></div>
+          <div className='projects__container'><a href="https://github.com/Adalab/modulo-1-evaluacion-final-kathimansilla" className="linkProject" target="_blank" rel="noreferrer"><img src={projectA1} className="projects__container__item" alt="project 4" /></a></div>*/}
         </section>
       </section>
-    
-    {/*<section className="navContainer">
-        <button className="navContainer__projects">Projects</button>
-        <form className="formContainer">
-          <label htmlFor="formContainer__tools">Tools</label>
-          <input
-            className="formContainer__tools"
-            type="text"
-            id="tools"
-            placeholder="Javascript"
-          />
-          <label htmlFor="softSkills">Soft Skills</label>
-          <input
-            className="formContainer__tools"
-            type="text"
-            id="softSkills"
-            placeholder="Fast learner"
-          />
-        </form>
-      </section>
-      <section className="toolsContainer">
-        <img
-          className="toolsContainer__item"
-          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
-          alt="javascript"
-        />
-        <img
-          className="toolsContainer__item"
-          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
-          alt="html5"
-        />
-        <img
-          className="toolsContainer__item"
-          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
-          alt="css3"
-        />
-        <img
-          className="toolsContainer__item"
-          src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg"
-          alt="sass"
-        />
-        <img
-          className="toolsContainer__item"
-          src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg"
-          alt="git"
-        />
-        <img
-          className="toolsContainer__item"
-          src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-          alt="reactjs"
-        />
-        <img
-          className="toolsContainer__item"
-          src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png"
-          alt="nodejs"
-        />
-        <img
-          className="toolsContainer__item--bigWidth1"
-          src="https://kinsta.com/wp-content/uploads/2019/04/logo-mysql-1.svg"
-          alt="mysql"
-        />
-        <img
-          className="toolsContainer__item--bigWidth2"
-          src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg"
-          alt="mongodb"
-        />
-      </section>*/}
       </>);
 };
 

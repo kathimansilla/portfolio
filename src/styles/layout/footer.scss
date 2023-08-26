@@ -1,8 +1,16 @@
 .footer {
-    height: 20%;
-    background-color: black;
-    color: rgb(195, 255, 235);
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
+  height: 20%;
+  background-color: black;
+  color: white;
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  padding: 15px;
+  &__text:hover {
+    color: white;
+    background-color: blue;
+    border: solid 2px white;
+    border-radius: 10%;
+    padding: 3px;
   }
+}
