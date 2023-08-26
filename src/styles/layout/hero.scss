@@ -43,37 +43,61 @@
   }
 
   &__softSkills {
+    position: fixed;
+    height: 100vh;
+    bottom: 0;
+    background-color: rgb(56, 56, 56);
+    opacity: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    margin: 0 15px;
-    &__item {
-      border: solid 1px white;
-      padding: 5px;
+    z-index: 0;
+    margin: 20px;
+    &__container {
       border-radius: 10%;
-      background-color: rgb(188, 187, 187);
-      text-align: center;
-      color: black;
-      transition: all 350ms ease-in-out;
+      z-index: 10;
+      width: 50%;
+      height: 50%;
+      padding: 20px;
+      background-color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin: 0 15px;
       &:hover {
-      transform: scale(2);
-      box-shadow: 0px 0px 5px white;
-      background-color: yellow;
-    }
-    &.firstItem {
-      &:hover {
-        transform: scale(2) translate(25px);
-      box-shadow: 0px 0px 5px white;
+        box-shadow: 0 0 5px wheat;
+      }
+      &__item {
+        border: solid 1px white;
+        padding: 5px;
+        border-radius: 10%;
+        background-color: black;
+        text-align: center;
+        color: white;
+        transition: all 350ms ease-in-out;
+        &:hover {
+          transform: scale(2);
+          box-shadow: 0px 0px 5px white;
+          background-color: yellow;
+          color: black;
+        }
       }
     }
-    &.lastItem {
-      &:hover {
-      transform: scale(1.5) translate(-35px);
-      box-shadow: 0px 0px 5px white;
-    }
-    }
-      
+  }
+
+  .closeSoftSkillsBtn {
+    position: fixed;
+    top: 22%;
+    right: 26%;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    &:hover {
+      background-color: yellow;
+      box-shadow: 0 0 10px black;
+      border-radius: 10%;
     }
   }
 
@@ -85,9 +109,9 @@
     transition: all 350ms ease-in-out, background-color 0.3s ease;
     &__item {
       width: 40px;
-    &:hover {
-      transform: scale(2.5);
-    }
+      &:hover {
+        transform: scale(2.5);
+      }
       &--width1 {
         width: 50px;
         &:hover {

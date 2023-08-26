@@ -11,20 +11,26 @@ const Main = () => {
           </a>
         </div>
 
-        <div className="hero__softSkills">
-          <p className="hero__softSkills__item firstItem">English B1</p>
-          <p className="hero__softSkills__item">Agile and Scrum</p>
-          <p className="hero__softSkills__item">Time management</p>
-          <p className="hero__softSkills__item">Self-discipline</p>
-          <p className="hero__softSkills__item">Teamwork</p>
-          <p className="hero__softSkills__item">Fast Learner</p>
-          <p className="hero__softSkills__item">Determination</p>
-          <p className="hero__softSkills__item">Proactivity</p>
-          <p className="hero__softSkills__item">Adaptability</p>
-          <p className="hero__softSkills__item lastItem">Communication skills</p>
+        <div className="hero__softSkills hidden">
+          <div className="hero__softSkills__container">
+            <button className="closeSoftSkillsBtn"><span>X</span></button>
+            <p className="hero__softSkills__container__item">English B1</p>
+            <p className="hero__softSkills__container__item">Agile and Scrum</p>
+            <p className="hero__softSkills__container__item">Time management</p>
+            <p className="hero__softSkills__container__item">Self-discipline</p>
+            <p className="hero__softSkills__container__item">Teamwork</p>
+            <p className="hero__softSkills__container__item">Fast Learner</p>
+            <p className="hero__softSkills__container__item">Determination</p>
+            <p className="hero__softSkills__container__item">Proactivity</p>
+            <p className="hero__softSkills__container__item">Adaptability</p>
+            <p className="hero__softSkills__container__item">Project Management</p>
+            <p className="hero__softSkills__container__item">Creativity</p>
+            <p className="hero__softSkills__container__item">Flexibility</p>
+            <p className="hero__softSkills__container__item">Communication skills</p>
+          </div>
         </div>
 
-        <div className="hero__tools hidden">
+        <div className="hero__tools">
         <img
           className="hero__tools__item"
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
