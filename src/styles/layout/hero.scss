@@ -41,6 +41,42 @@
       }
     }
   }
+
+  &__softSkills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 0 15px;
+    &__item {
+      border: solid 1px white;
+      padding: 5px;
+      border-radius: 10%;
+      background-color: rgb(188, 187, 187);
+      text-align: center;
+      color: black;
+      transition: all 350ms ease-in-out;
+      &:hover {
+      transform: scale(2);
+      box-shadow: 0px 0px 5px white;
+      background-color: yellow;
+    }
+    &.firstItem {
+      &:hover {
+        transform: scale(2) translate(25px);
+      box-shadow: 0px 0px 5px white;
+      }
+    }
+    &.lastItem {
+      &:hover {
+      transform: scale(1.5) translate(-35px);
+      box-shadow: 0px 0px 5px white;
+    }
+    }
+      
+    }
+  }
+
   &__tools {
     display: flex;
     justify-content: center;
@@ -68,4 +104,8 @@
       }
     }
   }
+}
+
+.hidden {
+  display: none;
 }

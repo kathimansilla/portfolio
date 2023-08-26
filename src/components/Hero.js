@@ -10,7 +10,21 @@ const Main = () => {
             <button className="aboutMeBtn">About me</button>
           </a>
         </div>
-        <div className="hero__tools">
+
+        <div className="hero__softSkills">
+          <p className="hero__softSkills__item firstItem">English B1</p>
+          <p className="hero__softSkills__item">Agile and Scrum</p>
+          <p className="hero__softSkills__item">Time management</p>
+          <p className="hero__softSkills__item">Self-discipline</p>
+          <p className="hero__softSkills__item">Teamwork</p>
+          <p className="hero__softSkills__item">Fast Learner</p>
+          <p className="hero__softSkills__item">Determination</p>
+          <p className="hero__softSkills__item">Proactivity</p>
+          <p className="hero__softSkills__item">Adaptability</p>
+          <p className="hero__softSkills__item lastItem">Communication skills</p>
+        </div>
+
+        <div className="hero__tools hidden">
         <img
           className="hero__tools__item"
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"

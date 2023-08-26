@@ -14,13 +14,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
-  margin: 30px 90px 40px;
+  margin: 30px 120px 40px;
   padding: 15px;
   overflow: hidden;
   &__container {
     overflow: hidden;
-    width: 350px;
-    height: 350px;
+    width: 330px;
+    height: 330px;
     transition: box-shadow 0.3s ease-in-out;
     &:hover {
       box-shadow: 0px 0px 20px rgb(43, 43, 43);
