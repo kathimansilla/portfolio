@@ -44,19 +44,21 @@
   }
 
   &__softSkills {
-    position: fixed;
     height: 100vh;
+    position: fixed;
     bottom: 0;
     background-color: rgb(56, 56, 56);
-    opacity: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 0;
-    margin: 20px;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+    &.active {
+      opacity: 90%;
+      transition: opacity 1s ease-out;
+      }
     &__container {
       border-radius: 10%;
-      z-index: 10;
       width: 50%;
       height: 50%;
       padding: 20px;
@@ -78,6 +80,7 @@
         text-align: center;
         color: white;
         transition: all 350ms ease-in-out;
+        cursor: pointer;
         &:hover {
           transform: scale(2);
           box-shadow: 0px 0px 5px white;
@@ -90,7 +93,7 @@
 
   .closeSoftSkillsBtn {
     position: fixed;
-    top: 22%;
+    top: 25%;
     right: 26%;
     border: none;
     background-color: white;
@@ -135,5 +138,7 @@
 }
 
 .hidden {
-  display: none;
+  opacity: 0;
+  height: 0;
+  transition: opacity 1s ease-out;
 }

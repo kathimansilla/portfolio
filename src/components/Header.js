@@ -10,7 +10,7 @@ const handleClickTools = (ev) => {
 
 const handleClickSS = (ev) => {
   ev.preventDefault();
-  var click = false;
+  var click = true;
   showSS(click);
 }
 

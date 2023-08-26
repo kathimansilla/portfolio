@@ -1,11 +1,11 @@
 import mongoDBLogo from "../images/mongodblogo.png";
 
-const Main = ( {hiddenClassT, hiddenClassSS, showSS}) => {
+const Main = ( {hiddenClassT, hiddenClassSS, showSS, classSS}) => {
 
   //functions
   const handleClickCloseSS = (ev) => {
     ev.preventDefault();
-    let click = true;
+    let click = false;
     showSS(click);
   }
   return (
@@ -18,7 +18,7 @@ const Main = ( {hiddenClassT, hiddenClassSS, showSS}) => {
           </a>
         </div>
 
-        <div className={`hero__softSkills ${hiddenClassSS}`}>
+        <div className={`hero__softSkills ${classSS} ${hiddenClassSS}`}>
           <div className="hero__softSkills__container">
             <button className="closeSoftSkillsBtn" onClick={handleClickCloseSS}><span>X</span></button>
             <p className="hero__softSkills__container__item">English B1</p>
