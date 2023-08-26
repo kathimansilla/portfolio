@@ -107,24 +107,27 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
-    transition: all 350ms ease-in-out, background-color 0.3s ease;
     &__item {
       width: 40px;
+      transition: all 450ms ease-in-out;
       &:hover {
         transform: scale(2.5);
+        margin: 25px;
       }
       &--width1 {
         width: 50px;
+        transition: all 450ms ease-in-out;
         &:hover {
           transform: scale(2.5);
-          margin: 10px;
+          margin: 35px;
         }
       }
       &--width2 {
         height: 30px;
+        transition: all 450ms ease-in-out;
         &:hover {
           transform: scale(1.9);
-          margin: 10px;
+          margin: 35px;
         }
       }
     }

@@ -7,8 +7,8 @@ import { useState } from 'react';
 
 function App() {
   //state variables
-  const [hiddenClassT, setHiddenClassT] = useState('');
-  const [hiddenClassSS, setHiddenClassSS] = useState('');
+  const [hiddenClassT, setHiddenClassT] = useState('hidden');
+  const [hiddenClassSS, setHiddenClassSS] = useState('hidden');
 
   //functions
   const toggleTools = () => {
@@ -18,7 +18,7 @@ function App() {
   const showSS = (click) => {
     console.log('ejecuté showss');
     console.log(click);
-    click === true ? setHiddenClassSS('') : setHiddenClassSS('hidden');
+    click === true ? setHiddenClassSS('hidden') : setHiddenClassSS('');
   }
   
   return (

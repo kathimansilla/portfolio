@@ -5,7 +5,7 @@ const Main = ( {hiddenClassT, hiddenClassSS, showSS}) => {
   //functions
   const handleClickCloseSS = (ev) => {
     ev.preventDefault();
-    let click = false;
+    let click = true;
     showSS(click);
   }
   return (
