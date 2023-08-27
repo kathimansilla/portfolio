@@ -1,5 +1,7 @@
 import linkedin from '../images/linkedin.svg';
 import twitter from '../images/square-x-twitter.svg';
+import { Link } from 'react-router-dom';
+
 const Header = ( {toggleTools, showSS} ) => {
 
 //functions
@@ -27,7 +29,7 @@ const handleClickSS = (ev) => {
             <button className='ul__toolsBtn' onClick={handleClickTools}>Tools</button>
           </li>
           <li>
-            <button className='ul__softSkillsBtn' onClick={handleClickSS}>Soft Skills</button>
+            <Link to="/softSkills"><button className='ul__softSkillsBtn' onClick={handleClickSS}>Soft Skills</button></Link>
           </li>
           <li>
             <a
