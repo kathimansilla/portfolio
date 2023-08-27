@@ -1,7 +1,6 @@
 import '../styles/App.scss';
 import Header from './Header';
 import Hero from './Hero';
-import SoftSkills from './SoftSkills';
 import ProjectSection from './ProjectSection';
 import Footer from './Footer';
 import { useState } from 'react';
@@ -12,7 +11,6 @@ function App() {
   const [hiddenClassT, setHiddenClassT] = useState('hidden');
   const [hiddenClassSS, setHiddenClassSS] = useState('hidden');
   const [classSS, setClassSS] = useState('');
-  //const [transitionOut, setTransitionOut] = useState('');
 
   //functions
   const toggleTools = () => {
@@ -24,7 +22,7 @@ function App() {
     console.log(click);
     if (click === true) {
       console.log('activé classSS');
-      setClassSS('active');
+      setTimeout(() => setClassSS('active'), 300);
       setHiddenClassSS('');
     } else {
       setClassSS('');
@@ -42,17 +40,9 @@ function App() {
             element={
               <Hero
                 hiddenClassT={hiddenClassT}
-              />
-            }
-          />
-          <Route
-            path="/softSkills"
-            element={
-              <SoftSkills
-                hiddenClassT={hiddenClassT}
                 hiddenClassSS={hiddenClassSS}
-                showSS={showSS}
                 classSS={classSS}
+                showSS={showSS}
               />
             }
           />

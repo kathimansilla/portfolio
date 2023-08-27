@@ -46,14 +46,13 @@
   &__softSkills {
     height: 100vh;
     position: fixed;
-    bottom: 0;
     background-color: rgb(56, 56, 56);
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0;
-    transition: opacity 1s ease-out;
-    top: -35px;
+    transition: opacity 1s ease-out;   
+    bottom: 0;
     &.active {
       opacity: 90%;
       transition: opacity 1s ease-out;
@@ -94,8 +93,8 @@
 
   .closeSoftSkillsBtn {
     position: fixed;
-    top: 18%;
-    right: 24.5%;
+    top: 22%;
+    right: 24%;
     border: none;
     background-color: white;
     cursor: pointer;
@@ -142,4 +141,5 @@
   opacity: 0;
   height: 0;
   transition: opacity 1s ease-out;
+  display: none;
 }
