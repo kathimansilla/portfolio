@@ -6,14 +6,6 @@
   justify-content: center;
   gap: 20px;
   &__title {
-    transition: all 2s ease-out;
-    &.active {
-      transform: translateY(-30px);
-    }
-    &.desactive {
-      transform: translateY(0);
-      transition: all 2s ease-out;
-    }
     &__link {
       text-decoration: none;
       display: flex;
@@ -35,7 +27,7 @@
         }
       }
       & .aboutMeBtn {
-        display: none;
+         display: none;
         border: none;
         background-color: black;
         color: white;
@@ -154,4 +146,9 @@
   height: 0;
   transition: opacity 2s ease;
   display: none;
+}
+.hiddent {
+  opacity: 0;
+  height: 0;
+  transition: opacity 2s ease;
 }
