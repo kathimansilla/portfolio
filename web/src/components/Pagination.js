@@ -1,4 +1,4 @@
-import { useState } from 'react';
+/*import { useState } from 'react';
 
 const Pagination = ({ projects }) => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -40,3 +40,4 @@ const Pagination = ({ projects }) => {
 };
 
 export default Pagination;
+*/
