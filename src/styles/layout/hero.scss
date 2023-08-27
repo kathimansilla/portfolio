@@ -6,6 +6,14 @@
   justify-content: center;
   gap: 20px;
   &__title {
+    transition: all 2s ease-out;
+    &.active {
+      transform: translateY(-30px);
+    }
+    &.desactive {
+      transform: translateY(0);
+      transition: all 2s ease-out;
+    }
     &__link {
       text-decoration: none;
       display: flex;
@@ -55,7 +63,6 @@
     bottom: 0;
     &.active {
       opacity: 90%;
-      transition: opacity 1s ease-out;
       }
     &__container {
       border-radius: 10%;
@@ -110,6 +117,11 @@
     justify-content: center;
     align-items: center;
     gap: 15px;
+    opacity: 0;
+    transition: opacity 2s ease-out; 
+    &.active {
+      opacity: 1;
+    }
     &__item {
       width: 40px;
       transition: all 450ms ease-in-out;
@@ -140,6 +152,6 @@
 .hidden {
   opacity: 0;
   height: 0;
-  transition: opacity 1s ease-out;
+  transition: opacity 2s ease;
   display: none;
 }

@@ -11,17 +11,27 @@ function App() {
   const [hiddenClassT, setHiddenClassT] = useState('hidden');
   const [hiddenClassSS, setHiddenClassSS] = useState('hidden');
   const [classSS, setClassSS] = useState('');
+  const [classT, setClassT] = useState('');
+  const [desactive, setDesactive] = useState('');
 
   //functions
   const toggleTools = () => {
-    setHiddenClassT(hiddenClassT === '' ? 'hidden' : '');
+    if (hiddenClassT === '') {
+      setTimeout(() => setHiddenClassT('hidden'), 1000);
+      setDesactive('desactive');
+      setClassT('');
+
+    } else {
+      setTimeout(() => setClassT('active'), 1000);
+      setHiddenClassT('');
+      setTimeout(() => setDesactive(''), 1000);
+    };
+
+    /*setHiddenClassT(hiddenClassT === '' ? 'hidden' : '');*/
   };
 
   const showSS = (click) => {
-    console.log('ejecuté showss');
-    console.log(click);
     if (click === true) {
-      console.log('activé classSS');
       setTimeout(() => setClassSS('active'), 300);
       setHiddenClassSS('');
     } else {
@@ -43,6 +53,8 @@ function App() {
                 hiddenClassSS={hiddenClassSS}
                 classSS={classSS}
                 showSS={showSS}
+                classT={classT}
+                desactive={desactive}
               />
             }
           />
