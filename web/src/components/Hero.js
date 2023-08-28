@@ -1,5 +1,5 @@
-import mongoDBLogo from "../images/mongodblogo.png";
 import SoftSkills from './SoftSkills';
+import Tools from './Tools';
 
 const Main = ( {hiddenClassT, hiddenClassSS, toggleSS, classSS, classT}) => {
 
@@ -19,7 +19,9 @@ const Main = ( {hiddenClassT, hiddenClassSS, toggleSS, classSS, classT}) => {
           </a>
         </div>
         <SoftSkills classSS={classSS} hiddenClassSS={hiddenClassSS} toggleSS={toggleSS}/>
-        <div className={`hero__tools ${hiddenClassT} ${classT}`}>
+        <Tools classT={classT} hiddenClassT={hiddenClassT}/>
+
+        {/*<div className={`hero__tools ${hiddenClassT} ${classT}`}>
         <img
           className="hero__tools__item"
           src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
@@ -65,7 +67,7 @@ const Main = ( {hiddenClassT, hiddenClassSS, toggleSS, classSS, classT}) => {
           src={mongoDBLogo}
           alt="mongodb"
         />
-        </div>
+        </div>*/}
       </section>
   );
 };

@@ -60,11 +60,11 @@ const ProjectSection = ({ projects }) => {
       {/*<Pagination />*/}
       <form action="back" className="pagination">
         <button className="pagination__btn" onClick={handlePrev} >
-          ← Anterior
+          ← Previous
         </button>
         <span className="pagination__text">Page {currentPage}</span>
         <button className="pagination__btn" onClick={handleNext} >
-          Siguiente →
+          Next →
         </button>
       </form>
       </section>
