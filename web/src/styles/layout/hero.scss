@@ -18,7 +18,7 @@
       & .title {
         font-size: 1.5rem;
         &:hover {
-          color: gray;
+          color: rgb(218, 85, 85);
         }
       }
       & .subTitle {
@@ -111,7 +111,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     opacity: 0;
     transition: opacity 2s ease-out; 
     &.active {

@@ -1,4 +1,4 @@
-import githubLogo from '../images/github.svg';
+import githubLogo from '../images/githubw.svg';
 import globeWeb from '../images/globe-solid.svg'
 import { useState } from 'react';
 

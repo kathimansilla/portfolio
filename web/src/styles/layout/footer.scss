@@ -6,7 +6,24 @@
   gap: 5px;
   justify-content: space-between;
   padding: 15px;
-  &__text:hover {
+  &:hover {
+    border-top: 1px solid white;
+  }
+  &__text {
+    display: flex;
+    gap: 5px;
+  }
+  &__quote {
+    color: rgb(151, 149, 149);
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 2s ease-out;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &__text__mail:hover {
+    cursor: pointer;
     color: white;
     background-color: blue;
     border: solid 2px white;

@@ -19,7 +19,7 @@ const SoftSkills = ({ classSS, hiddenClassSS, toggleSS }) => {
   //functions
   const SoftSkillsLi = (softSkillsObj) => {
     return softSkillsObj.map((eachSoftSkill) => (
-      <li>
+      <li key={eachSoftSkill}>
         <p className="hero__softSkills__container__item">{eachSoftSkill}</p>
       </li>
     ));
