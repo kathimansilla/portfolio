@@ -1,23 +1,18 @@
 {
   "files": {
-    "main.css": "./static/css/main.e43e629d.css",
-    "main.js": "./static/js/main.c440459e.js",
-    "static/media/project-alone-1.jpeg": "./static/media/project-alone-1.60dec2e085867d1451bf.jpeg",
-    "static/media/project-team-1.jpeg": "./static/media/project-team-1.802ffd84fed8f60386d8.jpeg",
-    "static/media/project-alone-3.jpeg": "./static/media/project-alone-3.483a85a0f1dcd1374f49.jpeg",
-    "static/media/project-alone-2.jpeg": "./static/media/project-alone-2.0b3f700e6e0ab9613f05.jpeg",
-    "static/media/project-alone-4.jpeg": "./static/media/project-alone-4.a45922ecc84238748247.jpeg",
-    "static/media/project-team-4.jpeg": "./static/media/project-team-4.5dd8dccadf2b340fdf07.jpeg",
-    "static/media/project-team-2.jpeg": "./static/media/project-team-2.5837f796323a395fb9d2.jpeg",
+    "main.css": "./static/css/main.72779a9c.css",
+    "main.js": "./static/js/main.c21ac160.js",
     "static/media/mongodblogo.png": "./static/media/mongodblogo.6afb022bc602729b681b.png",
+    "static/media/github.svg": "./static/media/github.6d4f8d6e9335a6ad1b70714b46fcc88d.svg",
+    "static/media/globe-solid.svg": "./static/media/globe-solid.06ddd479921b62ff578bdedba8e14ca8.svg",
     "static/media/linkedin.svg": "./static/media/linkedin.757885027fecebeb343266fa5ae768cd.svg",
     "static/media/square-x-twitter.svg": "./static/media/square-x-twitter.5572f07c320e834c5e1293ef540190ef.svg",
     "index.html": "./index.html",
-    "main.e43e629d.css.map": "./static/css/main.e43e629d.css.map",
-    "main.c440459e.js.map": "./static/js/main.c440459e.js.map"
+    "main.72779a9c.css.map": "./static/css/main.72779a9c.css.map",
+    "main.c21ac160.js.map": "./static/js/main.c21ac160.js.map"
   },
   "entrypoints": [
-    "static/css/main.e43e629d.css",
-    "static/js/main.c440459e.js"
+    "static/css/main.72779a9c.css",
+    "static/js/main.c21ac160.js"
   ]
 }
