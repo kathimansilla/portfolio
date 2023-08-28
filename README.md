@@ -28,3 +28,5 @@ Thanks to my experience, I have developed communication skills 🤝🏼, adaptab
   <a href="https://kinsta.com/wp-content/uploads/2019/04/logo-mysql-1.svg" target="_blank" rel="noreferrer"> <img src="https://kinsta.com/wp-content/uploads/2019/04/logo-mysql-1.svg" alt="mysql" height="40"/> </a> 
   <a href="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" alt="mongodb" height="40"/> </a> 
   
+
+#### 👩🏻‍💼 @kathimansilla
