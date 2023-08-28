@@ -71,7 +71,7 @@ function App() {
     };
   };
 
-  const showSS = (click) => {
+  const toggleSS = (click) => {
     if (click === true) {
       setTimeout(() => setClassSS('active'), 300);
       setHiddenClassSS('');
@@ -83,7 +83,7 @@ function App() {
 
   return (
     <>
-      <Header toggleTools={toggleTools} showSS={showSS} />
+      <Header toggleTools={toggleTools} toggleSS={toggleSS} />
       <main>
         <Routes>
           <Route
@@ -93,7 +93,7 @@ function App() {
                 hiddenClassT={hiddenClassT}
                 hiddenClassSS={hiddenClassSS}
                 classSS={classSS}
-                showSS={showSS}
+                toggleSS={toggleSS}
                 classT={classT}
               />
             }

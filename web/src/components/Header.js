@@ -1,7 +1,7 @@
 import linkedin from '../images/linkedin.svg';
 import twitter from '../images/square-x-twitter.svg';
 
-const Header = ( {toggleTools, showSS} ) => {
+const Header = ( {toggleTools, toggleSS} ) => {
 
 //functions
 const handleClickTools = (ev) => {
@@ -12,7 +12,7 @@ const handleClickTools = (ev) => {
 const handleClickSS = (ev) => {
   ev.preventDefault();
   var click = true;
-  showSS(click);
+  toggleSS(click);
 }
 
   return (

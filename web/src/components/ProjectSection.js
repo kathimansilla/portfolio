@@ -1,11 +1,5 @@
-import projectA1 from '../images/project-alone-1.jpeg';
-import projectA2 from '../images/project-alone-2.jpeg';
-import projectA3 from '../images/project-alone-3.jpeg';
-import projectA4 from '../images/project-alone-4.jpeg';
-import project1 from '../images/project-team-1.jpeg';
-import project2 from '../images/project-team-2.jpeg';
-import project4 from '../images/project-team-4.jpeg';
-import Pagination from './Pagination';
+import githubLogo from '../images/github.svg';
+import globeWeb from '../images/globe-solid.svg'
 import { useState } from 'react';
 
 const ProjectSection = ({ projects }) => {
@@ -35,24 +29,23 @@ const ProjectSection = ({ projects }) => {
     }
   };
 
+  // Render the list of the current projects
   const projectLi = currentProjects.map((project) => {
     return (
-      <li key={project.id}>
-        <div className="projects__container">
-          <p>{project.name}</p>
-          <a
-            href={project.url_project}
-            className="linkProject"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src={projectA4}
-              className="projects__container__item"
-              alt="project alone 4"
-            />
-          </a>
-        </div>
+      <li key={project.id} className="projects__container">
+          <p className="projects__container__title">{project.name}</p>
+          <div className="containerLogos">
+            <a
+              href={project.url_project}
+              className="linkProject"
+              target="_blank"
+              rel="noreferrer"
+            ><img className="containerLogos__item globe" src={globeWeb} alt="github logo" />
+            </a>
+            <a href={project.url_github} className="linkGuthubPtoject"
+              target="_blank"
+              rel="noreferrer"><img className="containerLogos__item github" src={githubLogo} alt="github logo" /></a>
+          </div>
       </li>
     );
   });
@@ -63,16 +56,14 @@ const ProjectSection = ({ projects }) => {
         <h3 className="projectSection__title">Projects</h3>
         <section>
           <ul className="projects">{projectLi}</ul>
-          {/*<Pagination projects={projects} />*/}
         </section>
-
       {/*<Pagination />*/}
       <form action="back" className="pagination">
-        <button className="pagination__button" onClick={handlePrev} >
+        <button className="pagination__btn" onClick={handlePrev} >
           ← Anterior
         </button>
-        <span className="pagination_text">Página {currentPage}</span>
-        <button className="pagination__button" onClick={handleNext} >
+        <span className="pagination__text">Page {currentPage}</span>
+        <button className="pagination__btn" onClick={handleNext} >
           Siguiente →
         </button>
       </form>
