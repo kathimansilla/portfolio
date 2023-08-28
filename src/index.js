@@ -1,16 +1,11 @@
-const express = require('express');
-const cors = require('cors');
-const mysql = require('mysql2/promise');
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './components/App';
+import { HashRouter } from 'react-router-dom';
 
-//server
-const server = express();
-
-//config server
-server.use(cors());
-server.use(express.json({limit: '25mb'}));
-
-//start server
-const serverPort = 4000;
-server.listen(serverPort, () => {
-    console.log(`Server listening at http://localhost:${serverPort}`);
-});
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    <HashRouter>
+      <App />
+    </HashRouter>
+);
