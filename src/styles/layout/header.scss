@@ -1,0 +1,158 @@
+.header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    transition: color 0.3s ease;
+    &:hover {
+      border-bottom: solid 1px gray;
+      & .logo {
+        color: black;
+        text-shadow: -2px -2px 0 white,  
+        2px -2px 0 white,
+        -2px 2px 0 white,
+        2px 2px 0 white;
+      }
+    }
+    &__logo {
+      display: flex;
+      align-items: center;
+      margin-top: 5px;
+      &__link {
+        display: inline-block;
+        background-color: white;
+        text-decoration: none;
+      }
+      & .logo {
+        width: 30px;
+        background-color: #000000;
+        color: white;
+        font-family: $fontGeneral;
+        font-size: 1.3rem;
+        font-weight: bold;
+        display: inline-block;
+        text-align: center;
+      }
+    }
+  }
+  
+  .header__nav {
+    display: flex;
+    gap: 15px;
+    & .ul {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      &__toolsBtn {
+        background-color: #000000;
+        color: red;
+        border: none;
+        font-family: $fontGeneral;
+        font-size: 0.9rem;
+        margin-top: 1px;
+        cursor: pointer;
+        &:hover {
+          color: white;
+          background-color: red;
+          border: solid 2px white;
+          border-radius: 20%;
+          height: 30px;
+          width: 65px;
+        }
+      }
+      &__softSkillsBtn {
+        background-color: #000000;
+        color: yellow;
+        border: none;
+        font-family: $fontGeneral;
+        font-size: 0.9rem;
+        margin-top: 1px;
+        cursor: pointer;
+        &:hover {
+          color: black;
+          background-color: yellow;
+          border: solid 2px white;
+          border-radius: 20%;
+          height: 30px;
+          width: 100px;
+        }
+      }
+      &__cvBtn {
+        background-color: #000000;
+        color: rgb(11, 129, 11);
+        border: none;
+        font-family: $fontGeneral;
+        font-size: 0.9rem;
+        margin-top: 1px;
+        cursor: pointer;
+        &:hover {
+          color: white;
+          background-color: rgb(11, 129, 11);
+          border: solid 2px white;
+          border-radius: 20%;
+          height: 30px;
+          width: 90px;
+        }
+      }
+      &__contactBtn {
+        background-color: #000000;
+        color: rgb(58, 58, 252);
+        border: none;
+        font-size: 0.9rem;
+        margin-top: 1px;
+        font-family: $fontGeneral;
+        cursor: pointer;
+        &:hover {
+          color: white;
+          background-color: blue;
+          border: solid 2px white;
+          border-radius: 20%;
+          height: 30px;
+          width: 90px;
+        }
+      }
+      &__linkedin {
+        height: 21px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        margin-top: 2px;
+        &:hover {
+          border: 2px solid white;
+          padding: 3px;
+          border-radius: 20%;
+        }
+        &__link {
+          display: inline-block;
+          background-color: white;
+          border-radius: 40%;
+          &:hover {
+            background-color: rgb(30, 30, 254);
+          }
+        }
+        & .linkedinLogo {
+          width: 25px;
+        }
+      }
+      &__twitter {
+        height: 19px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        margin-top: 4px;
+        &:hover {
+          border: 2px solid white;
+          padding: 3px;
+          border-radius: 20%;
+        }
+        &__link {
+          display: inline-block;
+          background-color: white;
+          border-radius: 40%;
+        }
+        & .twitterLogo {
+          width: 25px;
+        }
+      }
+    }
+  }
