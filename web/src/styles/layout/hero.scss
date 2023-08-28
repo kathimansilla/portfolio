@@ -6,6 +6,7 @@
   justify-content: center;
   gap: 20px;
   &__title {
+    padding-top: 20px;
     z-index: 0;
     &__link {
       text-decoration: none;
@@ -154,4 +155,14 @@
   opacity: 0;
   height: 0;
   transition: opacity 2s ease;
+}
+
+.aboutMeText {
+  width: 800px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.collapsed {
+  display: none;
 }
