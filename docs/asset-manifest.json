@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "./static/css/main.96cb6eca.css",
-    "main.js": "./static/js/main.5fe101ba.js",
+    "main.css": "./static/css/main.9ded7d11.css",
+    "main.js": "./static/js/main.089b8e32.js",
     "static/media/mongodblogo.png": "./static/media/mongodblogo.6afb022bc602729b681b.png",
     "static/media/githubw.svg": "./static/media/githubw.6d4f8d6e9335a6ad1b70714b46fcc88d.svg",
     "static/media/globe-solid.svg": "./static/media/globe-solid.06ddd479921b62ff578bdedba8e14ca8.svg",
     "static/media/linkedin.svg": "./static/media/linkedin.757885027fecebeb343266fa5ae768cd.svg",
     "static/media/square-x-twitter.svg": "./static/media/square-x-twitter.5572f07c320e834c5e1293ef540190ef.svg",
     "index.html": "./index.html",
-    "main.96cb6eca.css.map": "./static/css/main.96cb6eca.css.map",
-    "main.5fe101ba.js.map": "./static/js/main.5fe101ba.js.map"
+    "main.9ded7d11.css.map": "./static/css/main.9ded7d11.css.map",
+    "main.089b8e32.js.map": "./static/js/main.089b8e32.js.map"
   },
   "entrypoints": [
-    "static/css/main.96cb6eca.css",
-    "static/js/main.5fe101ba.js"
+    "static/css/main.9ded7d11.css",
+    "static/js/main.089b8e32.js"
   ]
 }
