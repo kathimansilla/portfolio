@@ -1,5 +1,7 @@
 import githubLogo from '../images/githubw.svg';
 import globeWeb from '../images/globe-solid.svg';
+import arrowRight from '../images/arrow-right.svg';
+import arrowLeft from '../images/arrow-left.svg';
 import { useState } from 'react';
 
 const ProjectSection = ({ projects }) => {
@@ -74,12 +76,11 @@ const ProjectSection = ({ projects }) => {
         </section>
         {/*<Pagination />*/}
         <form action="back" className="pagination">
-          <button className="pagination__btn" onClick={handlePrev}>
-            ← Previous
+          <button className="pagination__btn" onClick={handlePrev}><img className="pagination__btn__img" src={arrowLeft} alt="arrow-right" />
           </button>
           <span className="pagination__text">Page {currentPage}</span>
-          <button className="pagination__btn two" onClick={handleNext}>
-            Next →
+          <button className="pagination__btn next" onClick={handleNext}>
+            <img className="pagination__btn__img next" src={arrowRight} alt="arrow left" />
           </button>
         </form>
       </section>
