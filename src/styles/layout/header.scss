@@ -3,9 +3,9 @@
   justify-content: space-between;
   padding: 15px;
   border-bottom: solid 1px white;
+  font-family: $fontGeneral;
   transition: all 1s ease-in;
   position: relative;
-  font-family: $fontGeneral;
   &::before {
     content: '';
     background-image: url(../../images/neuronas.jpg);
@@ -34,9 +34,9 @@
     }
   }
 }
+
+//nav
 .header__nav {
-  display: flex;
-  gap: 15px;
   & .ul {
     display: flex;
     align-items: center;
