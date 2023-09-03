@@ -88,9 +88,9 @@
     &__img {
       position: relative;
       top: -155px;
-      left: -450px;
+      left: -480px;
       &.next {
-        left: 450px;
+        left: 480px;
       }
     }
     &:hover {
@@ -101,4 +101,8 @@
     font-size: 0.9rem;
     color: gray;
   }
+}
+
+.hidden {
+  display: none;
 }

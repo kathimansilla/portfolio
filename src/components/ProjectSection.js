@@ -9,27 +9,38 @@ const ProjectSection = ({ projects }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const projectsPerPage = 3;
   const [currentProjects, setCurrentProjects] = useState(projects.slice(0, 3));
+  const [displayArrowR, setDisplayArrowR] = useState('');
+  const [displayArrowL, setDisplayArrowL] = useState('hidden');
 
   const handlePrev = (ev) => {
     ev.preventDefault();
     if (currentPage > 1) {
+      setDisplayArrowR('');
       const endIndex = (currentPage - 1) * projectsPerPage;
       const startIndex = endIndex - projectsPerPage;
       setCurrentProjects(projects.slice(startIndex, endIndex));
       setCurrentPage(currentPage - 1);
       return currentProjects;
+    } else {
+      setDisplayArrowL('hidden');
     }
   };
 
   const handleNext = (ev) => {
+    console.log(currentPage);
     ev.preventDefault();
     if (currentProjects.length >= 3) {
+      setDisplayArrowL('');
       const startIndex = currentPage * projectsPerPage;
       const endIndex = startIndex + projectsPerPage;
       setCurrentProjects(projects.slice(startIndex, endIndex));
       setCurrentPage(currentPage + 1);
+      if (currentPage >= 2) {
+        console.log(currentPage);
+        setDisplayArrowR('hidden');
+      }
       return currentProjects;
-    }
+    } 
   };
 
   // Render the list of the current projects
@@ -76,10 +87,10 @@ const ProjectSection = ({ projects }) => {
         </section>
         {/*<Pagination />*/}
         <form action="back" className="pagination">
-          <button className="pagination__btn" onClick={handlePrev}><img className="pagination__btn__img" src={arrowLeft} alt="arrow-right" />
+          <button className={`pagination__btn ${displayArrowL}`} onClick={handlePrev}><img className="pagination__btn__img" src={arrowLeft} alt="arrow-right" />
           </button>
           <span className="pagination__text">Page {currentPage}</span>
-          <button className="pagination__btn next" onClick={handleNext}>
+          <button className={`pagination__btn next ${displayArrowR}`} onClick={handleNext}>
             <img className="pagination__btn__img next" src={arrowRight} alt="arrow left" />
           </button>
         </form>
