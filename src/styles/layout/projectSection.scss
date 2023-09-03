@@ -96,13 +96,12 @@
     &:hover {
       opacity: 1;
     }
+    & .hidden {
+      display: none;
+    }
   }
   &__text {
     font-size: 0.9rem;
     color: gray;
   }
-}
-
-.hidden {
-  display: none;
 }

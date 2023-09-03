@@ -13,6 +13,7 @@ const ProjectSection = ({ projects }) => {
   const [displayArrowL, setDisplayArrowL] = useState('hidden');
 
   const handlePrev = (ev) => {
+    console.log(currentPage);
     ev.preventDefault();
     if (currentPage > 1) {
       setDisplayArrowR('');
@@ -20,14 +21,14 @@ const ProjectSection = ({ projects }) => {
       const startIndex = endIndex - projectsPerPage;
       setCurrentProjects(projects.slice(startIndex, endIndex));
       setCurrentPage(currentPage - 1);
+      if (currentPage < 3) {
+        setDisplayArrowL('hidden');
+      }
       return currentProjects;
-    } else {
-      setDisplayArrowL('hidden');
     }
   };
 
   const handleNext = (ev) => {
-    console.log(currentPage);
     ev.preventDefault();
     if (currentProjects.length >= 3) {
       setDisplayArrowL('');
@@ -36,7 +37,6 @@ const ProjectSection = ({ projects }) => {
       setCurrentProjects(projects.slice(startIndex, endIndex));
       setCurrentPage(currentPage + 1);
       if (currentPage >= 2) {
-        console.log(currentPage);
         setDisplayArrowR('hidden');
       }
       return currentProjects;
