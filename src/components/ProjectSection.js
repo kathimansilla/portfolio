@@ -1,5 +1,5 @@
 import githubLogo from '../images/githubw.svg';
-import globeWeb from '../images/globe-solid.svg'
+import globeWeb from '../images/globe-solid.svg';
 import { useState } from 'react';
 
 const ProjectSection = ({ projects }) => {
@@ -16,12 +16,13 @@ const ProjectSection = ({ projects }) => {
       setCurrentProjects(projects.slice(startIndex, endIndex));
       setCurrentPage(currentPage - 1);
       return currentProjects;
-    }};
+    }
+  };
 
   const handleNext = (ev) => {
     ev.preventDefault();
     if (currentProjects.length >= 3) {
-      const startIndex = (currentPage) * projectsPerPage;
+      const startIndex = currentPage * projectsPerPage;
       const endIndex = startIndex + projectsPerPage;
       setCurrentProjects(projects.slice(startIndex, endIndex));
       setCurrentPage(currentPage + 1);
@@ -33,19 +34,33 @@ const ProjectSection = ({ projects }) => {
   const projectLi = currentProjects.map((project) => {
     return (
       <li key={project.id} className="projects__container">
-          <p className="projects__container__title">{project.name}</p>
-          <div className="containerLogos">
-            <a
-              href={project.url_project}
-              className="linkProject"
-              target="_blank"
-              rel="noreferrer"
-            ><img className="containerLogos__item globe" src={globeWeb} alt="github logo" />
-            </a>
-            <a href={project.url_github} className="linkGuthubPtoject"
-              target="_blank"
-              rel="noreferrer"><img className="containerLogos__item github" src={githubLogo} alt="github logo" /></a>
-          </div>
+        <p className="projects__container__title">{project.name}</p>
+        <div className="containerLogos">
+          <a
+            href={project.url_project}
+            className="linkProject"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              className="containerLogos__item globe"
+              src={globeWeb}
+              alt="github logo"
+            />
+          </a>
+          <a
+            href={project.url_github}
+            className="linkGuthubPtoject"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              className="containerLogos__item github"
+              src={githubLogo}
+              alt="github logo"
+            />
+          </a>
+        </div>
       </li>
     );
   });
@@ -54,19 +69,19 @@ const ProjectSection = ({ projects }) => {
     <>
       <section className="projectSection">
         <h3 className="projectSection__title">Projects</h3>
-        <section>
+        <section className="projectSection__container">
           <ul className="projects">{projectLi}</ul>
         </section>
-      {/*<Pagination />*/}
-      <form action="back" className="pagination">
-        <button className="pagination__btn" onClick={handlePrev} >
-          ← Previous
-        </button>
-        <span className="pagination__text">Page {currentPage}</span>
-        <button className="pagination__btn" onClick={handleNext} >
-          Next →
-        </button>
-      </form>
+        {/*<Pagination />*/}
+        <form action="back" className="pagination">
+          <button className="pagination__btn" onClick={handlePrev}>
+            ← Previous
+          </button>
+          <span className="pagination__text">Page {currentPage}</span>
+          <button className="pagination__btn two" onClick={handleNext}>
+            Next →
+          </button>
+        </form>
       </section>
     </>
   );

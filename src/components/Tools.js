@@ -29,6 +29,16 @@ const Tools = ({ hiddenClassT, classT }) => {
       alt: 'git',
     },
     {
+      class: 'hero__tools__item--width1',
+      src: 'https://kinsta.com/wp-content/uploads/2019/04/logo-mysql-1.svg',
+      alt: 'mysql',
+    },
+    {
+      class: 'hero__tools__item--width2',
+      src: 'https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg',
+      alt: 'mongodb',
+    },
+    {
       class: 'hero__tools__item',
       src: 'https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg',
       alt: 'reactjs',
@@ -37,16 +47,6 @@ const Tools = ({ hiddenClassT, classT }) => {
       class: 'hero__tools__item',
       src: 'https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png',
       alt: 'nodejs',
-    },
-    {
-      class: 'hero__tools__item--width1',
-      src: 'https://kinsta.com/wp-content/uploads/2019/04/logo-mysql-1.svg',
-      alt: 'mysql',
-    },
-    {
-      class: 'hero__tools__item--width2',
-      src: mongoDBLogo,
-      alt: 'mongodb',
     },
   ];
 

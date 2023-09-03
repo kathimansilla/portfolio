@@ -84,7 +84,7 @@ function App() {
   return (
     <>
       <Header toggleTools={toggleTools} toggleSS={toggleSS} />
-      <main>
+      <main className='main'>
         <Routes>
           <Route
             path="/"

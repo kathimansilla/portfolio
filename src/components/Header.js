@@ -1,5 +1,5 @@
-import linkedin from '../images/linkedin.svg';
-import twitter from '../images/square-x-twitter.svg';
+import linkedin from '../images/linkedinSinFondo.png';
+import twitter from '../images/Twitter-Logo.png';
 
 const Header = ( {toggleTools, toggleSS} ) => {
 
@@ -19,7 +19,7 @@ const handleClickSS = (ev) => {
     <header className="header">
       <div className="header__logo">
         <a href="./" className="header__logo__link">
-          <span className="logo">K</span>
+          <span>K</span>
         </a>
       </div>
       <nav className="header__nav">
