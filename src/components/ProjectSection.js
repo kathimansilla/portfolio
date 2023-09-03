@@ -89,11 +89,11 @@ const ProjectSection = ({ projects }) => {
         <form action="back" className="pagination">
           <button className={`pagination__btn ${displayArrowL}`} onClick={handlePrev}><img className="pagination__btn__img" src={arrowLeft} alt="arrow-right" />
           </button>
-          <span className="pagination__text">Page {currentPage}</span>
           <button className={`pagination__btn next ${displayArrowR}`} onClick={handleNext}>
             <img className="pagination__btn__img next" src={arrowRight} alt="arrow left" />
           </button>
         </form>
+        <span className="pagination__text">Page {currentPage}</span>
       </section>
     </>
   );

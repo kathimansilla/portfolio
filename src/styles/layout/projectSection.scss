@@ -23,8 +23,9 @@
     opacity: 1;
   }
   &__title {
-    color: black;
-    margin-top: 15px;
+    color: rgb(216, 216, 216);
+    text-shadow: 2px 2px 2px black;
+    margin-top: 20px;
   }
 }
 
@@ -75,7 +76,6 @@
 
 .pagination {
   display: flex;
-  gap: 10px;
   justify-content: center;
   &__btn {
     font-family: $fontGeneral;
@@ -83,14 +83,14 @@
     background-color: transparent;
     color: black;
     cursor: pointer;
-    width: 40px;
     opacity: 0.5;
     &__img {
       position: relative;
       top: -155px;
-      left: -480px;
+      left: -520px;
+      width: 30px;
       &.next {
-        left: 480px;
+        left: 520px;
       }
     }
     &:hover {
@@ -103,5 +103,8 @@
   &__text {
     font-size: 0.9rem;
     color: gray;
+    position: absolute;
+    left: 48%;
+    top: 270px;
   }
 }
