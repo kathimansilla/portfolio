@@ -8,7 +8,7 @@ import { Route, Routes } from 'react-router-dom';
 
 function App() {
   //state variables
-  const [hiddenClassT, setHiddenClassT] = useState('hiddenT');
+  const [hiddenClassT, setHiddenClassT] = useState('hiddent');
   const [hiddenClassSS, setHiddenClassSS] = useState('hidden');
   const [classSS, setClassSS] = useState('');
   const [classT, setClassT] = useState('');
@@ -63,7 +63,7 @@ function App() {
   //functions
   const toggleTools = () => {
     if (hiddenClassT === '') {
-      setTimeout(() => setHiddenClassT('hiddenT'), 500);
+      setTimeout(() => setHiddenClassT('hiddent'), 500);
       setClassT('');
     } else {
       setTimeout(() => setClassT('active'), 500);

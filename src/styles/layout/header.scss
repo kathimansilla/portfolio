@@ -1,27 +1,12 @@
 .header {
-  display: flex;
-  justify-content: space-between;
+  @include flex(space-between, unset, row, 0);
+  font-family: $fontGeneral;
   padding: 15px;
   border-bottom: solid 1px white;
-  font-family: $fontGeneral;
   transition: all 1s ease-in;
   position: relative;
   &::before {
-    content: '';
-    background-image: url(../../images/neuronas.jpg);
-    opacity: 1;
-    background-size: cover;
-    background-position: top;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    transition: opacity 1s ease-in;
-  }
-  &:hover::before {
-    opacity: 1;
+    @include before__background(1, top, none)
   }
   &__logo__link {
     color: gray;
@@ -38,87 +23,34 @@
 //nav
 .header__nav {
   & .ul {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+    @include flex(unset, center, row, 15px);
     &__toolsBtn {
-      background-color: transparent;
-      color: gray;
-      border: none;
-      font-family: $fontGeneral;
-      font-size: 0.9rem;
-      margin-top: 1px;
-      cursor: pointer;
-      transition: all .5s ease-in-out;
+      @include button();
       &:hover {
-        color: black;
-        background-color: pink;
-        box-shadow: 1px 1px 1px 1px black;
-        border-radius: 20%;
-        height: 25px;
-        width: 65px;
+        @include button__hover(65px);
       }
     }
     &__softSkillsBtn {
-      background-color: transparent;
-      color: gray;
-      border: none;
-      font-family: $fontGeneral;
-      font-size: 0.9rem;
-      margin-top: 1px;
-      cursor: pointer;
-      transition: all .5s ease-in-out;
+      @include button();
       &:hover {
-        color: black;
-        background-color: pink;
-        box-shadow: 1px 1px 1px 1px black;
-        border-radius: 20%;
-        height: 25px;
-        width: 100px;
+        @include button__hover(100px);
       }
     }
     &__cvBtn {
-      background-color: transparent;
-      color: gray;
-      border: none;
-      font-family: $fontGeneral;
-      font-size: 0.9rem;
-      margin-top: 1px;
-      cursor: pointer;
-      transition: all .5s ease-in-out;
-      width: auto;
-      height: auto;
+      @include button();
       &:hover {
-        color: black;
-        background-color: pink;
-        box-shadow: 1px 1px 1px 1px black;
-        border-radius: 20%;
-        height: 25px;
-        width: 90px;
+        @include button__hover(90px);
       }
     }
     &__contactBtn {
-      background-color: transparent;
-      color: gray;
-      border: none;
-      font-size: 0.9rem;
-      margin-top: 1px;
-      font-family: $fontGeneral;
-      cursor: pointer;
-      transition: all .5s ease-in-out;
+      @include button();
       &:hover {
-        color: black;
-        background-color: rgb(255, 218, 224);
-        box-shadow: 1px 1px 1px 1px black;
-        border-radius: 20%;
-        height: 25px;
-        width: 80px;
+        @include button__hover(90px);
       }
     }
     &__linkedin {
+      @include flex(unset, center, row, 0);
       height: 20px;
-      display: flex;
-      align-items: center;
       overflow: hidden;
       margin-top: 2px;
       padding: 2px;
@@ -135,9 +67,8 @@
       }
     }
     &__twitter {
+      @include flex(unset, center, row, 0);
       height: 19px;
-      display: flex;
-      align-items: center;
       &__link {
         background-color: transparent;
         border: solid 1px black;

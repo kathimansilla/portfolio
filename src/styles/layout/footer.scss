@@ -1,4 +1,5 @@
 .footer {
+  @include flex(space-between, unset, row, 0);
   font-family: $fontGeneral;
   font-size: 0.8rem;
   position: fixed;
@@ -7,25 +8,12 @@
   right: 0;
   height: 5vh;
   color: black;
-  display: flex;
-  justify-content: space-between;
   padding: 15px;
   &::before {
-    content: '';
-    background-image: url(../../images/neuronas.jpg);
-    opacity: 1;
-    background-size: cover;
-    background-position: bottom;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+    @include before__background(1, bottom, none);
   }
   &__text {
-    display: flex;
-    gap: 5px;
+    @include flex(unset, unset, row, 5px);
     &__mail:hover {
       color: palevioletred;
       cursor: pointer;

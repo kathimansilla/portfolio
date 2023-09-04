@@ -2,26 +2,12 @@
 @import './tools.scss';
 
 .hero {
-  height: 35vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
+  @include flex(center, unset, column, 20px);
   font-family: $fontGeneral;
   font-size: 0.9rem;
+  height: 35vh;
   &::before {
-    content: '';
-    background-image: url(../../images/neuronas.jpg);
-    opacity: 0;
-    background-size: cover;
-    background-position: top;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    transition: opacity 1s ease-in;
+    @include before__background(0, top, opacity 1s ease-in);
   }
   &:hover::before {
     opacity: 1;
@@ -31,12 +17,9 @@
     z-index: 1;
     font-weight: bold;
     &__link {
+      @include flex(unset, center, column, 10px);
       color: gray;
       text-decoration: none;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
       transition: color 0.3s ease, text-shadow 0.3s ease;
       & .title {
         font-size: 1.5rem;
@@ -67,23 +50,21 @@
   }
 }
 
-.hidden {
-  opacity: 0;
-  height: 0;
-  transition: opacity 2s ease;
-  display: none;
-}
-.hiddent {
-  opacity: 0;
-  height: 0;
-  transition: opacity 2s ease;
-}
-
 .aboutMeText {
   width: 800px;
   text-align: center;
   margin-top: 5px;
 }
+
+//hidden classes
+.hidden {
+  @include hidden__transition();
+}
+
+/*
+.hiddent {
+  //@include hidden__transition();
+}*/
 
 .collapsed {
   display: none;
