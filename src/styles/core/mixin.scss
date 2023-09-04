@@ -1,0 +1,54 @@
+//display
+@mixin flex($justify-c, $align-i, $direction, $gap) {
+  display: flex;
+  justify-content: $justify-c;
+  align-items: $align-i;
+  flex-direction: $direction;
+  gap: $gap;
+}
+
+//button
+@mixin button() {
+  background-color: transparent;
+  color: gray;
+  border: none;
+  font-family: $fontGeneral;
+  font-size: 0.9rem;
+  margin-top: 1px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin button__hover($width) {
+  color: black;
+  background-color: pink;
+  box-shadow: 1px 1px 1px 1px black;
+  border-radius: 20%;
+  height: 25px;
+  width: $width;
+}
+
+//before
+@mixin before__background($opacity, $bg__position, $transition) {
+  content: '';
+  background-image: url(../../images/neuronas.jpg);
+  opacity: $opacity;
+  background-size: cover;
+  background-position: $bg__position;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: $transition;
+}
+
+//hidden with transition
+
+@mixin hidden__transition() {
+  opacity: 0;
+  height: 0;
+  transition: opacity 2s ease;
+  display: none;
+}

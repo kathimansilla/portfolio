@@ -1,5 +1,3 @@
-import mongoDBLogo from '../images/mongodblogo.png';
-
 const Tools = ({ hiddenClassT, classT }) => {
   // object
   const toolsObj = [
