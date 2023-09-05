@@ -52,27 +52,15 @@
     width: fit-content;
     &__toolsBtn {
       @include button();
-      &:hover {
-        @include button__hover(65px);
-      }
     }
     &__softSkillsBtn {
       @include button();
-      &:hover {
-        @include button__hover(100px);
-      }
     }
     &__cvBtn {
       @include button();
-      &:hover {
-        @include button__hover(90px);
-      }
     }
     &__contactBtn {
       @include button();
-      &:hover {
-        @include button__hover(90px);
-      }
     }
     &__rrssLogos {
       @include flex(end, center, row, 10px);
@@ -85,11 +73,6 @@
         overflow: hidden;
         &__link {
           background-color: transparent;
-          &:hover {
-            background-color: rgb(43, 77, 156);
-            border-radius: 30%;
-            width: 23px;
-          }
         }
         & .linkedinLogo {
           width: 25px;
@@ -101,10 +84,6 @@
         margin-top: 2px;
         &__link {
           background-color: transparent;
-          &:hover {
-            background-color: white;
-            border-radius: 50%;
-          }
         }
         & .githubLogo {
           width: 23px;

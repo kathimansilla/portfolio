@@ -1,8 +1,8 @@
 .footer {
   @include flex(unset, center, column, 0);
   font-family: $fontGeneral;
-  font-size: 0.8rem;
-  position: fixed;
+  font-size: 0.7rem;
+  position: sticky;
   bottom: 0;
   left: 0;
   right: 0;
@@ -17,22 +17,10 @@
   }
   &__text {
     @include flex(unset, unset, row, 5px);
-    &__mail:hover {
-      color: palevioletred;
-      cursor: pointer;
-    }
+    color: palevioletred;
   }
   &__quote {
-    color: gray;
-    text-decoration: none;
-    opacity: 0;
-    transition: opacity 2s ease-out;
-    text-align: center;
-  }
-  &:hover {
-    & .footer__quote {
-      opacity: 1;
-    }
+    display: none;
   }
 
   /*@include flex(space-between, unset, row, 0);

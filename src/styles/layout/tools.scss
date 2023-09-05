@@ -1,5 +1,30 @@
 .hero {
   &__tools {
+    display: none;
+    transition: display 2s ease-out;
+    &.active {
+      @include flex(center, center, row, 30px);
+      flex-wrap: wrap;
+      padding: 30px;
+      height: 150px;
+    }
+    &__item {
+      width: 40px;
+      &--width1 {
+        width: 50px;
+      }
+      &--width2 {
+        height: 30px;
+      }
+    }
+  }
+}
+
+//backup
+
+/*
+.hero {
+  &__tools {
     @include flex(center, center, row, 30px);
     opacity: 0;
     transition: opacity 2s ease-out;
@@ -32,3 +57,4 @@
     }
   }
 }
+*/
