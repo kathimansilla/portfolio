@@ -4,24 +4,155 @@
   padding: 15px;
   border-bottom: solid 1px white;
   transition: all 1s ease-in;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   &::before {
     @include before__background(1, top, none)
   }
   &__logo__link {
     color: gray;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   &:hover {
     .header__logo__link {
       font-size: 1.3rem;
     }
   }
+  @media screen and (min-width: 1024px) {
+    @include flex(space-between, unset, row, 0);
+  }
 }
 
 //nav
 .header__nav {
+  @include flex(right, unset, column, 0);
+  &__menu {
+    @include flex(unset, end, column, 0);
+    background-color: transparent;
+    border: none;
+    & .menuImgCollapsed {
+      display: none;
+    } 
+    &__img {
+      width: 20px
+    }
+  }
+  /*& .ulCollapsed {
+    display: none;
+  }*/
+  & .ul {
+    @include flex(unset, end, column, 10px);
+    &__toolsBtn {
+      @include button();
+      &:hover {
+        @include button__hover(65px);
+      }
+    }
+    &__softSkillsBtn {
+      @include button();
+      &:hover {
+        @include button__hover(100px);
+      }
+    }
+    &__cvBtn {
+      @include button();
+      &:hover {
+        @include button__hover(90px);
+      }
+    }
+    &__contactBtn {
+      @include button();
+      &:hover {
+        @include button__hover(90px);
+      }
+    }
+    &__rrssLogos {
+      @include flex(end, center, row, 10px);
+      margin-right: 7px;
+      &__linkedin {
+        @include flex(unset, center, row, 0);
+        height: 20px;
+        overflow: hidden;
+        margin-top: 2px;
+        padding: 2px;
+        &__link {
+          background-color: transparent;
+          &:hover {
+            background-color: rgb(43, 77, 156);
+            border-radius: 30%;
+            width: 23px;
+          }
+        }
+        & .linkedinLogo {
+          width: 25px;
+        }
+      }
+      &__github {
+        @include flex(unset, center, row, 0);
+        height: 20px;
+        margin-top: 2px;
+        &__link {
+          background-color: transparent;
+          &:hover {
+            background-color: white;
+            border-radius: 50%;
+          }
+        }
+        & .githubLogo {
+          width: 23px;
+        }
+      }
+    }
+  }
+}
+
+
+// backup
+
+/*
+.header {
+  @include flex(space-between, unset, row, 0);
+  font-family: $fontGeneral;
+  padding: 15px;
+  border-bottom: solid 1px white;
+  transition: all 1s ease-in;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  &::before {
+    @include before__background(1, top, none)
+  }
+  &__logo__link {
+    color: gray;
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+  &:hover {
+    .header__logo__link {
+      font-size: 1.3rem;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    @include flex(space-between, unset, row, 0);
+  }
+}
+
+//nav
+.header__nav {
+  &__menu {
+    background-color: transparent;
+    border: none;
+    &__img {
+      width: 20px
+    }
+  }
+  /*& .ulCollapsed {
+    display: none;
+  }*//*
   & .ul {
     @include flex(unset, center, row, 15px);
     &__toolsBtn {
@@ -83,3 +214,4 @@
     }
   }
 }
+*/

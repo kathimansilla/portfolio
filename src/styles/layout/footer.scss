@@ -1,7 +1,7 @@
 .footer {
   @include flex(unset, center, column, 0);
   font-family: $fontGeneral;
-  font-size: .8rem;
+  font-size: 0.8rem;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -10,6 +10,10 @@
   //min-width: 320px;
   &::before {
     @include before__background(1, bottom, none);
+  }
+  @media screen and (min-width: 1024px) {
+    @include flex(space-between, unset, row, 0);
+    padding: 20px;
   }
   &__text {
     @include flex(unset, unset, row, 5px);
@@ -29,11 +33,6 @@
     & .footer__quote {
       opacity: 1;
     }
-  }
- 
-  @media screen and (min-width: 1024px) {
-    @include flex(space-between, unset, row, 0);
-    padding: 20px;
   }
 
   /*@include flex(space-between, unset, row, 0);
@@ -67,4 +66,3 @@
     }
   }*/
 }
-
