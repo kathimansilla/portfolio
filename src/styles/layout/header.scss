@@ -8,21 +8,23 @@
   top: 0;
   left: 0;
   right: 0;
+  height: 15px;
   &::before {
-    @include before__background(1, top, none)
+    @include before__background(1, top, none);
   }
-  &__logo__link {
-    color: gray;
-    text-decoration: none;
-    font-size: 1.3rem;
-  }
-  &:hover {
-    .header__logo__link {
+  &__logo {
+    height: 15px;
+    &__link {
+      color: gray;
+      text-decoration: none;
       font-size: 1.3rem;
+      position: absolute;
+      top: 10px;
     }
   }
+
   @media screen and (min-width: 1024px) {
-    @include flex(space-between, unset, row, 0);
+    //@include flex(space-between, unset, row, 0);
   }
 }
 
@@ -33,18 +35,21 @@
     @include flex(unset, end, column, 0);
     background-color: transparent;
     border: none;
+    position: relative;
+    top: -5px;
     & .menuImgCollapsed {
       display: none;
-    } 
+    }
     &__img {
-      width: 20px
+      width: 20px;
     }
   }
-  /*& .ulCollapsed {
+  & .ulCollapsed {
     display: none;
-  }*/
+  }
   & .ul {
     @include flex(unset, end, column, 10px);
+    width: fit-content;
     &__toolsBtn {
       @include button();
       &:hover {
@@ -75,9 +80,9 @@
       &__linkedin {
         @include flex(unset, center, row, 0);
         height: 20px;
-        overflow: hidden;
         margin-top: 2px;
         padding: 2px;
+        overflow: hidden;
         &__link {
           background-color: transparent;
           &:hover {
@@ -108,7 +113,6 @@
     }
   }
 }
-
 
 // backup
 
@@ -152,7 +156,7 @@
   }
   /*& .ulCollapsed {
     display: none;
-  }*//*
+  }*/ /*
   & .ul {
     @include flex(unset, center, row, 15px);
     &__toolsBtn {
