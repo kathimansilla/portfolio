@@ -6,7 +6,7 @@ const Main = ( {hiddenClassT, hiddenClassSS, toggleSS, classSS, classT}) => {
   return (
       <section className="hero">
         <div className="hero__title">
-          <a className="hero__title__link" href="./" target="_blank">
+          <a className="hero__title__link" href="https://github.com/kathimansilla" target="_blank" rel="noreferrer">
             <h1 className="title">Katherina Mansilla</h1>
             <h2 className="subTitle">Full-stack Developer Web</h2>
             <TypingText delay={70}/>
