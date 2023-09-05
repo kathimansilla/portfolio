@@ -3,13 +3,6 @@ import Tools from './Tools';
 import TypingText from './TypingText';
 
 const Main = ( {hiddenClassT, hiddenClassSS, toggleSS, classSS, classT}) => {
-  
- //functions
- const handleClickCloseSS = (ev) => {
-  ev.preventDefault();
-  let click = false;
-  toggleSS(click);
-}
   return (
       <section className="hero">
         <div className="hero__title">
