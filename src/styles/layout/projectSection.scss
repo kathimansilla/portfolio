@@ -6,7 +6,8 @@
   font-size: 0.9rem;
   position: relative;
   &::before {
-    @include before__background(0, bottom, opacity 1s ease-in)
+    @include before__background(0, bottom, opacity 1s ease-in);
+    background-repeat: repeat;
   }
   &__title {
     color: rgb(216, 216, 216);

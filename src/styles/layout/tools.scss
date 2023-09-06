@@ -1,15 +1,19 @@
 .hero {
   &__tools {
     display: none;
+    height: 60vh;
     transition: display 2s ease-out;
     &.active {
       @include flex(center, center, row, 30px);
+      align-content: center;
       flex-wrap: wrap;
-      padding: 30px;
-      height: 150px;
+      padding: 0 100px 10px;
+      margin-top: 50px;
+      transition: display 2s ease-out;
     }
     &__item {
       width: 40px;
+      height: 40px;
       &--width1 {
         width: 50px;
       }

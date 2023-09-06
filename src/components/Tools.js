@@ -50,7 +50,7 @@ const Tools = ({ hiddenClassT, classT }) => {
 
   const ToolsLi = (toolsObj) => {
     return toolsObj.map((eachTool) => (
-      <li key={eachTool.src}>
+      <li key={eachTool.src} className={eachTool.class}>
         <img className={eachTool.class} src={eachTool.src} alt={eachTool.alt} />
       </li>
     ));
