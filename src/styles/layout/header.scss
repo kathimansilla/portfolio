@@ -22,15 +22,22 @@
       top: 10px;
     }
   }
-
   @media screen and (min-width: 1024px) {
-    //@include flex(space-between, unset, row, 0);
+    &:hover {
+      .header__logo__link {
+        font-size: 1.4rem;
+        color: black;
+      }
+    }
   }
 }
 
 //nav
 .header__nav {
   @include flex(right, unset, column, 0);
+  @media screen and (min-width: 1024px) {
+    @include flex(unset, unset, unset, 0);
+  }
   &__menu {
     @include flex(unset, end, column, 0);
     background-color: transparent;
@@ -42,10 +49,20 @@
     }
     &__img {
       width: 20px;
+      @media screen and (min-width: 1024px) {
+        display: none;
+      }
+    }
+    @media screen and (min-width: 1024px) {
+      @include flex(unset, unset, unset, 0);
+      position: unset;
     }
   }
   & .ulCollapsed {
     display: none;
+    @media screen and (min-width: 1024px) {
+      @include flex(unset, center, row, 15px);
+    }
   }
   & .ul {
     @include flex(unset, end, column, 2px);
@@ -54,21 +71,52 @@
     padding: 5px;
     z-index: 10;
     width: fit-content;
+    @media screen and (min-width: 1024px) {
+      display: unset;
+    }
     &__toolsBtn {
       @include button(rgb(206, 38, 66), .8rem);
+      @media screen and (min-width: 1024px) {
+        @include button(gray, .9rem);
+        &:hover {
+          @include button__hover(115px);
+        }
+      }
     }
     &__softSkillsBtn {
       @include button(rgb(206, 38, 66), .8rem);
+      @media screen and (min-width: 1024px) {
+        @include button(gray, .9rem);
+        &:hover {
+          @include button__hover(100px);
+        }
+      }
     }
     &__cvBtn {
       @include button(rgb(206, 38, 66), .8rem);
+      @media screen and (min-width: 1024px) {
+        @include button(gray, .9rem);
+        &:hover {
+          @include button__hover(90px);
+        }
+      }
     }
     &__contactBtn {
       @include button(rgb(206, 38, 66), .8rem);
+      @media screen and (min-width: 1024px) {
+        @include button(gray, .9rem);
+        &:hover {
+          @include button__hover(90px);
+        }
+      }
     }
     &__rrssLogos {
       @include flex(end, center, row, 10px);
       margin-right: 7px;
+      @media screen and (min-width: 1024px) {
+        @include flex(end, center, row, 15px);
+        margin-right: 0;
+      }
       &__linkedin {
         @include flex(unset, center, row, 0);
         height: 20px;
@@ -78,6 +126,14 @@
         &__link {
           background-color: rgb(210, 105, 122); 
           border-radius: 20%;
+          @media screen and (min-width: 1024px) {
+            background-color: transparent;
+            &:hover {
+              background-color: rgb(43, 77, 156);
+              border-radius: 30%;
+              width: 23px;
+            }
+          }
         }
         & .linkedinLogo {
           width: 25px;
@@ -90,6 +146,13 @@
         &__link {
           background-color: rgb(210, 105, 122);
           border-radius: 50%;
+          @media screen and (min-width: 1024px) {
+            background-color: transparent;
+            &:hover {
+              background-color: white;
+              border-radius: 50%;
+            }
+          }
         }
         & .githubLogo {
           width: 23px;
@@ -98,6 +161,10 @@
     }
   }
 }
+
+
+
+
 
 // backup
 

@@ -11,6 +11,19 @@
   &::before {
     @include before__background(1, top, opacity 1s ease-in);
   }
+  @media screen and (min-width: 1024px) {
+    &::before {
+      @include before__background(0, top, opacity 1s ease-in);
+    }
+    &:hover::before {
+      opacity: 1;
+    }
+    &:hover {
+      .hero__title {
+        color: black;
+      }
+    }
+  }
   &__title {
     display: inline-flex;
     align-items: center;
@@ -32,14 +45,27 @@
       color: white;
       margin-top: 15px;
     }
+    @media screen and (min-width: 1024px) {
+      display: unset;
+      padding-top: 20px;
+      color: gray;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+      & .title {
+        font-size: 1.5rem;
+      }
+      & .subTitle {
+        font-size: 1.2rem;
+      }
+    }
   }
 }
 
+/*
 .aboutMeText {
   width: 800px;
   text-align: center;
   margin-top: 5px;
-}
+}*/
 
 //hidden classes
 .hidden {

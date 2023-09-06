@@ -11,18 +11,66 @@
       margin-top: 50px;
       transition: display 2s ease-out;
     }
+    @media screen and (min-width: 1024px) {
+      opacity: 0;
+      height: unset;
+      transition: opacity 2s ease-out;
+      &.active {
+        opacity: 1;
+      }
+    }
     &__item {
       width: 40px;
       height: 40px;
+      @media screen and (min-width: 1024px) {
+        transition: all 450ms ease-in-out;
+        &:hover {
+          transform: scale(2.5);
+          margin: 25px;
+        }
+      }
+
       &--width1 {
         width: 50px;
+        transition: all 450ms ease-in-out;
+        &:hover {
+          transform: scale(2.5);
+          margin: 35px;
+        }
       }
       &--width2 {
         height: 30px;
+        transition: all 450ms ease-in-out;
+        &:hover {
+          transform: scale(1.9);
+          margin: 35px;
+        }
+      }
+      
+      &--width1 {
+        width: 50px;
+        @media screen and (min-width: 1024px) {
+          transition: all 450ms ease-in-out;
+          &:hover {
+            transform: scale(2.5);
+            margin: 35px;
+          }
+        }
+      }
+      &--width2 {
+        height: 30px;
+        @media screen and (min-width: 1024px) {
+          transition: all 450ms ease-in-out;
+          &:hover {
+            transform: scale(1.9);
+            margin: 35px;
+          }
+        }
       }
     }
   }
 }
+
 .closeToolsBtn{
   background-color: transparent;
   border: none;
@@ -31,6 +79,9 @@
 .hiddenBackBtn {
   display: none;
 }
+
+
+
 
 //backup
 
