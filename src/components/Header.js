@@ -22,7 +22,7 @@ const Header = ({ toggleTools, toggleSS }) => {
         <a
           href="https://github.com/kathimansilla"
           rel="noreferrer"
-          className="header__logo__link"
+          className="header__logo__link" target="_blank"
         >
           <span>K</span>
         </a>

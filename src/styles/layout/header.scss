@@ -48,19 +48,23 @@
     display: none;
   }
   & .ul {
-    @include flex(unset, end, column, 10px);
+    @include flex(unset, end, column, 2px);
+    background-image: url('../../images/neuronas.jpg');
+    border-radius: 5%;
+    padding: 5px;
+    z-index: 10;
     width: fit-content;
     &__toolsBtn {
-      @include button();
+      @include button(rgb(206, 38, 66), .8rem);
     }
     &__softSkillsBtn {
-      @include button();
+      @include button(rgb(206, 38, 66), .8rem);
     }
     &__cvBtn {
-      @include button();
+      @include button(rgb(206, 38, 66), .8rem);
     }
     &__contactBtn {
-      @include button();
+      @include button(rgb(206, 38, 66), .8rem);
     }
     &__rrssLogos {
       @include flex(end, center, row, 10px);
@@ -72,7 +76,8 @@
         padding: 2px;
         overflow: hidden;
         &__link {
-          background-color: transparent;
+          background-color: rgb(210, 105, 122); 
+          border-radius: 20%;
         }
         & .linkedinLogo {
           width: 25px;
@@ -83,7 +88,8 @@
         height: 20px;
         margin-top: 2px;
         &__link {
-          background-color: transparent;
+          background-color: rgb(210, 105, 122);
+          border-radius: 50%;
         }
         & .githubLogo {
           width: 23px;
