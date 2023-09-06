@@ -1,20 +1,19 @@
 {
   "files": {
-    "main.css": "./static/css/main.8b274bf5.css",
-    "main.js": "./static/js/main.8b3381a4.js",
+    "main.css": "./static/css/main.977fd30f.css",
+    "main.js": "./static/js/main.189e9bac.js",
     "static/media/neuronas.jpg": "./static/media/neuronas.2907a3255298a0871da8.jpg",
     "static/media/Twitter-Logo.png": "./static/media/Twitter-Logo.88263887f006b05cc1af.png",
-    "static/media/mongodblogo.png": "./static/media/mongodblogo.6afb022bc602729b681b.png",
     "static/media/githubw.svg": "./static/media/githubw.6d4f8d6e9335a6ad1b70714b46fcc88d.svg",
     "static/media/globe-solid.svg": "./static/media/globe-solid.06ddd479921b62ff578bdedba8e14ca8.svg",
     "index.html": "./index.html",
     "static/media/arrow-right.svg": "./static/media/arrow-right.1aa22aecb3ede5e29bed468125be3112.svg",
     "static/media/arrow-left.svg": "./static/media/arrow-left.59a97d8b24ddc2052f95020101c0cc10.svg",
-    "main.8b274bf5.css.map": "./static/css/main.8b274bf5.css.map",
-    "main.8b3381a4.js.map": "./static/js/main.8b3381a4.js.map"
+    "main.977fd30f.css.map": "./static/css/main.977fd30f.css.map",
+    "main.189e9bac.js.map": "./static/js/main.189e9bac.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b274bf5.css",
-    "static/js/main.8b3381a4.js"
+    "static/css/main.977fd30f.css",
+    "static/js/main.189e9bac.js"
   ]
 }
