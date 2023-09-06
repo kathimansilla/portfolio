@@ -10,7 +10,7 @@ const ProjectSection = ({ projects }) => {
   const projectsPerPage = 3;
   const [currentProjects, setCurrentProjects] = useState(projects.slice(0, 3));
   const [displayArrowR, setDisplayArrowR] = useState('');
-  const [displayArrowL, setDisplayArrowL] = useState('hidden');
+  const [displayArrowL, setDisplayArrowL] = useState('hiddenArrow');
 
   const handlePrev = (ev) => {
     console.log(currentPage);
@@ -22,7 +22,7 @@ const ProjectSection = ({ projects }) => {
       setCurrentProjects(projects.slice(startIndex, endIndex));
       setCurrentPage(currentPage - 1);
       if (currentPage < 3) {
-        setDisplayArrowL('hidden');
+        setDisplayArrowL('hiddenArrow');
       }
       return currentProjects;
     }
@@ -37,7 +37,7 @@ const ProjectSection = ({ projects }) => {
       setCurrentProjects(projects.slice(startIndex, endIndex));
       setCurrentPage(currentPage + 1);
       if (currentPage >= 2) {
-        setDisplayArrowR('hidden');
+        setDisplayArrowR('hiddenArrow');
       }
       return currentProjects;
     } 
@@ -84,16 +84,16 @@ const ProjectSection = ({ projects }) => {
         <h3 className="projectSection__title">Projects</h3>
         <section className="projectSection__container">
           <ul className="projects">{projectLi}</ul>
+          <span className="currentPage">Page {currentPage}</span>
         </section>
         {/*<Pagination />*/}
         <form action="back" className="pagination">
           <button className={`pagination__btn ${displayArrowL}`} onClick={handlePrev}><img className="pagination__btn__img" src={arrowLeft} alt="arrow-right" />
           </button>
-          <button className={`pagination__btn next ${displayArrowR}`} onClick={handleNext}>
-            <img className="pagination__btn__img next" src={arrowRight} alt="arrow left" />
+          <button className={`pagination__btn ${displayArrowR}`} onClick={handleNext}>
+            <img className="pagination__btn__img--next" src={arrowRight} alt="arrow left" />
           </button>
         </form>
-        <span className="pagination__text">Page {currentPage}</span>
       </section>
     </>
   );

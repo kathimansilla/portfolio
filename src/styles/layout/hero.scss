@@ -5,14 +5,14 @@
   @include flex(center, unset, column, 20px);
   margin-top: 20px;
   font-family: $fontGeneral;
-  min-height: 40vh;
+  min-height: 30vh;
   max-height: 90vh;
   &::before {
     @include before__background(1, top, opacity 1s ease-in);
   }
   &__title {
     @include flex(unset, center, column, 10px);
-    padding-top: 70px;
+    padding-top: 50px;
     z-index: 1;
     font-weight: bold;
     & .title {
