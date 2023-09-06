@@ -12,7 +12,6 @@ function App() {
   const [hiddenClassSS, setHiddenClassSS] = useState('hidden');
   const [classSS, setClassSS] = useState('');
   const [classT, setClassT] = useState('');
-  //const [desactive, setDesactive] = useState('');
 
   //data array
   const projects = [

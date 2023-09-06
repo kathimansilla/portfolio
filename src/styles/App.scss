@@ -6,3 +6,36 @@
 @import './layout/hero.scss';
 @import './layout/projectSection.scss';
 @import './layout/footer.scss';
+
+.fixPage {
+    display: none;
+  }
+  
+  @media all and (max-width: 1024px) {
+    .fixPage {
+        @include flex(center, center, column, 0);
+        width: 100vw;
+        height: 100vh;
+        background-color: red;
+        z-index: 50;
+        padding: 10px;
+        &__text {
+            text-align: center;
+            font-size: 3rem;
+        }
+    }
+    .header {
+      display: none;
+    }
+    .hero {
+      display: none;
+    }
+    .projectSection {
+        display: none;
+    }
+    .footer {
+        display: none;
+    }
+  }
+
+    

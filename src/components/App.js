@@ -82,6 +82,7 @@ function App() {
 
   return (
     <>
+    <div className='fixPage'><p className='fixPage__text'>Mobile version under repair! <div>⛏👷🏻‍♀️</div></p></div>
       <Header toggleTools={toggleTools} toggleSS={toggleSS} />
       <main className='main'>
         <Routes>
