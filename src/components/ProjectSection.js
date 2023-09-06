@@ -4,7 +4,7 @@ import arrowRight from '../images/arrow-right.svg';
 import arrowLeft from '../images/arrow-left.svg';
 import { useState } from 'react';
 
-const ProjectSection = ({ projects }) => {
+const ProjectSection = ({ projects, hiddenClassProjects }) => {
   // Pagination
   const [currentPage, setCurrentPage] = useState(1);
   const projectsPerPage = 3;
@@ -79,8 +79,7 @@ const ProjectSection = ({ projects }) => {
   });
 
   return (
-    <>
-      <section className="projectSection">
+      <section className={`projectSection ${hiddenClassProjects}`}>
         <h3 className="projectSection__title">Projects</h3>
         <section className="projectSection__container">
           <ul className="projects">{projectLi}</ul>
@@ -95,7 +94,6 @@ const ProjectSection = ({ projects }) => {
           </button>
         </form>
       </section>
-    </>
   );
 };
 

@@ -9,6 +9,9 @@
     @include before__background(0, bottom, opacity 1s ease-in);
     background-repeat: repeat;
   }
+  &.hiddenProjectSection {
+    display: none;
+  }
   &__title {
     color: rgb(216, 216, 216);
     text-shadow: 2px 2px 2px black;
@@ -75,6 +78,7 @@
     }
   }
 }
+
 
 //backup
 
