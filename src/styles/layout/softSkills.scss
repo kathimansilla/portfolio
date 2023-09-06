@@ -1,6 +1,6 @@
 .hero {
   &__softSkills {
-    @include flex(center, center, row, 0);
+    @include flex(center, center, column, 0);
     font-size: 0.7rem;
     z-index: 2;
     height: 100vh;
@@ -36,10 +36,9 @@
   }
 
   .closeSoftSkillsBtn {
+    position: relative;
+    top: 35px;
     z-index: 3;
-    position: absolute;
-    top: 65px;
-    left: 270px;
     border: none;
     background-color: transparent;
     color: gray;

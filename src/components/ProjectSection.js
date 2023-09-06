@@ -40,7 +40,7 @@ const ProjectSection = ({ projects, hiddenClassProjects }) => {
         setDisplayArrowR('hiddenArrow');
       }
       return currentProjects;
-    } 
+    }
   };
 
   // Render the list of the current projects
@@ -79,21 +79,41 @@ const ProjectSection = ({ projects, hiddenClassProjects }) => {
   });
 
   return (
-      <section className={`projectSection ${hiddenClassProjects}`}>
-        <h3 className="projectSection__title">Projects</h3>
-        <section className="projectSection__container">
-          <ul className="projects">{projectLi}</ul>
-          <span className="currentPage">Page {currentPage}</span>
-        </section>
-        {/*<Pagination />*/}
-        <form action="back" className="pagination">
-          <button className={`pagination__btn ${displayArrowL}`} onClick={handlePrev}><img className="pagination__btn__img" src={arrowLeft} alt="arrow-right" />
+    <section className={`projectSection ${hiddenClassProjects}`}>
+      <h3 className="projectSection__title">Projects</h3>
+      <section className="projectSection__container">
+        <button
+          className={`pagination__btn ${displayArrowL}`}
+          onClick={handlePrev}
+        >
+          <img
+            className="pagination__btn__img"
+            src={arrowLeft}
+            alt="arrow-right"
+          />
+        </button>
+        <ul className="projects">{projectLi}</ul>
+        <button
+          className={`pagination__btn ${displayArrowR}`}
+          onClick={handleNext}
+        >
+          <img
+            className="pagination__btn__img--next"
+            src={arrowRight}
+            alt="arrow left"
+          />
+        </button>
+        <span className="currentPage">Page {currentPage}</span>
+      </section>
+      {/*<Pagination />*/}
+      <form action="back" className="pagination">
+        {/*<button className={`pagination__btn ${displayArrowL}`} onClick={handlePrev}><img className="pagination__btn__img" src={arrowLeft} alt="arrow-right" />
           </button>
           <button className={`pagination__btn ${displayArrowR}`} onClick={handleNext}>
             <img className="pagination__btn__img--next" src={arrowRight} alt="arrow left" />
-          </button>
-        </form>
-      </section>
+          </button>*/}
+      </form>
+    </section>
   );
 };
 

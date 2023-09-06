@@ -1,4 +1,5 @@
-const Tools = ({ hiddenClassT, classT }) => {
+const Tools = ({ hiddenClassT, classT, toggleTools, hiddenBackBtn }) => {
+
   // object
   const toolsObj = [
     {
@@ -56,12 +57,24 @@ const Tools = ({ hiddenClassT, classT }) => {
     ));
   };
 
+
+  //function
+
+  const handleClickCloseT = () => {
+    toggleTools();
+  };
+  
   return (
-    <div>
-      <ul className={`hero__tools ${hiddenClassT} ${classT}`}>
-        {ToolsLi(toolsObj)}
-      </ul>
-    </div>
+    <>
+      <button className={`closeToolsBtn ${hiddenBackBtn}`} onClick={handleClickCloseT}>
+        <span>Volver</span>
+      </button>
+      <div>
+        <ul className={`hero__tools ${hiddenClassT} ${classT}`}>
+          {ToolsLi(toolsObj)}
+        </ul>
+      </div>
+    </>
   );
 };
 

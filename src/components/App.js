@@ -1,6 +1,6 @@
 import '../styles/App.scss';
 import Header from './Header';
-import Hero from './Hero';
+import Main from './Main';
 import ProjectSection from './ProjectSection';
 import Footer from './Footer';
 import { useState } from 'react';
@@ -10,6 +10,7 @@ function App() {
   //state variables
   const [hiddenClassT, setHiddenClassT] = useState('hiddent');
   const [hiddenClassSS, setHiddenClassSS] = useState('hidden');
+  const [hiddenBackBtn, setHiddenBackBtn] = useState('hiddenBackBtn');
   const [hiddenClassProjects, setHiddenClassProjects] = useState('');
   const [classSS, setClassSS] = useState('');
   const [classT, setClassT] = useState('');
@@ -78,10 +79,12 @@ function App() {
       setTimeout(() => setHiddenClassT('hiddent'), 500);
       setClassT('');
       setHiddenClassProjects('');
+      setHiddenBackBtn('hiddenBackBtn');
     } else {
       setTimeout(() => setClassT('active'), 500);
       setHiddenClassT('');
       setHiddenClassProjects('hiddenProjectSection');
+      setHiddenBackBtn('');
     }
   };
 
@@ -103,12 +106,14 @@ function App() {
           <Route
             path="/"
             element={
-              <Hero
+              <Main
                 hiddenClassT={hiddenClassT}
                 hiddenClassSS={hiddenClassSS}
                 classSS={classSS}
                 toggleSS={toggleSS}
                 classT={classT}
+                toggleTools={toggleTools}
+                hiddenBackBtn={hiddenBackBtn}
               />
             }
           />

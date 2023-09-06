@@ -2,7 +2,7 @@ import SoftSkills from './SoftSkills';
 import Tools from './Tools';
 import TypingText from './TypingText';
 
-const Main = ( {hiddenClassT, hiddenClassSS, toggleSS, classSS, classT}) => {
+const Main = ( {hiddenClassT, hiddenClassSS, toggleSS, classSS, classT, toggleTools, hiddenBackBtn }) => {
   return (
       <section className="hero">
         <div className="hero__title">
@@ -14,7 +14,7 @@ const Main = ( {hiddenClassT, hiddenClassSS, toggleSS, classSS, classT}) => {
     
         </div>
         <SoftSkills classSS={classSS} hiddenClassSS={hiddenClassSS} toggleSS={toggleSS}/>
-        <Tools classT={classT} hiddenClassT={hiddenClassT}/>
+        <Tools classT={classT} hiddenClassT={hiddenClassT} toggleTools={toggleTools} hiddenBackBtn={hiddenBackBtn} />
       </section>
   );
 };
