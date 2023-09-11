@@ -11,6 +11,7 @@
   @media screen and (min-width: 1024px) {
     @include flex(center, unset, column, 20px);
     font-size: 0.9rem;
+    margin-top: 0;
   }
   &::before {
     @include before__background(1, top, opacity 1s ease-in);
@@ -39,6 +40,7 @@
     @media screen and (min-width: 1024px) {
       padding-top: 20px;
       z-index: 1;
+      color: gray;
     }
     & .title {
       font-size: 1rem;
