@@ -9,24 +9,31 @@
   left: 0;
   right: 0;
   height: 15px;
+  @media screen and (min-width: 1024px) {
+    height: unset;
+    &:hover {
+      .header__logo__link {
+        font-size: 1.3rem;
+      }
+    }
+  }
   &::before {
     @include before__background(1, top, none);
   }
   &__logo {
     height: 15px;
+    @media screen and (min-width: 1024px) {
+      height: unset;
+    }
     &__link {
       color: gray;
       text-decoration: none;
       font-size: 1.3rem;
       position: absolute;
       top: 10px;
-    }
-  }
-  @media screen and (min-width: 1024px) {
-    &:hover {
-      .header__logo__link {
-        font-size: 1.4rem;
-        color: black;
+      @media screen and (min-width: 1024px) {
+        position: unset;
+        font-size: 1.2rem;
       }
     }
   }

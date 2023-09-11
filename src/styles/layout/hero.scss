@@ -5,9 +5,13 @@
   @include flex(center, center, column, 20px);
   margin-top: 20px;
   font-family: $fontGeneral;
-  min-height: 30vh;
+  min-height: 35vh;
   max-height: 90vh;
   z-index: 1;
+  @media screen and (min-width: 1024px) {
+    @include flex(center, unset, column, 20px);
+    font-size: 0.9rem;
+  }
   &::before {
     @include before__background(1, top, opacity 1s ease-in);
   }
@@ -32,11 +36,21 @@
     padding-top: 50px;
     z-index: -1;
     font-weight: bold;
+    @media screen and (min-width: 1024px) {
+      padding-top: 20px;
+      z-index: 1;
+    }
     & .title {
       font-size: 1rem;
+      @media screen and (min-width: 1024px) {
+        font-size: 1.5rem;
+      }
     }
     & .subTitle {
       font-size: .9rem;
+      @media screen and (min-width: 1024px) {
+        font-size: 1.2rem;
+      }
     }
     & .aboutMeBtn {
       display: none;
@@ -44,18 +58,6 @@
       background-color: black;
       color: white;
       margin-top: 15px;
-    }
-    @media screen and (min-width: 1024px) {
-      display: unset;
-      padding-top: 20px;
-      color: gray;
-      transition: color 0.3s ease, text-shadow 0.3s ease;
-      & .title {
-        font-size: 1.5rem;
-      }
-      & .subTitle {
-        font-size: 1.2rem;
-      }
     }
   }
 }

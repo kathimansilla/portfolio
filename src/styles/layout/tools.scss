@@ -3,6 +3,15 @@
     display: none;
     height: 60vh;
     transition: display 2s ease-out;
+    @media screen and (min-width: 1024px) {
+      @include flex(center, center, row, 30px);
+      height: unset;
+      opacity: 0;
+      transition: opacity 2s ease-out;
+      /*&.active {
+        opacity: 1;
+      }*/
+    }
     &.active {
       @include flex(center, center, row, 30px);
       align-content: center;
@@ -10,12 +19,7 @@
       padding: 0 100px 10px;
       margin-top: 50px;
       transition: display 2s ease-out;
-    }
-    @media screen and (min-width: 1024px) {
-      opacity: 0;
-      height: unset;
-      transition: opacity 2s ease-out;
-      &.active {
+      @media screen and (min-width: 1024px) {
         opacity: 1;
       }
     }
@@ -29,7 +33,6 @@
           margin: 25px;
         }
       }
-
       &--width1 {
         width: 50px;
         transition: all 450ms ease-in-out;
@@ -46,7 +49,7 @@
           margin: 35px;
         }
       }
-      
+
       &--width1 {
         width: 50px;
         @media screen and (min-width: 1024px) {
@@ -71,7 +74,7 @@
   }
 }
 
-.closeToolsBtn{
+.closeToolsBtn {
   background-color: transparent;
   border: none;
   color: gray;
@@ -79,9 +82,6 @@
 .hiddenBackBtn {
   display: none;
 }
-
-
-
 
 //backup
 
