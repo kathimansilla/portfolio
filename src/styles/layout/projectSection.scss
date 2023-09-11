@@ -36,6 +36,7 @@
       border: none;
       background-color: transparent;
       opacity: 0.5;
+      cursor: pointer;
       &__img {
         transform: rotate(90deg);
         width: 18px;
@@ -74,12 +75,14 @@
   margin: 0 0 10px;
   padding: 15px;
   @media screen and (min-width: 1024px) {
+    align-items: unset;
     height: 20vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     grid-gap: 10px;
     margin: 30px 120px 40px;
+    width: 70%;
   }
   &__container {
     @include flex(center, center, column, 5px);
