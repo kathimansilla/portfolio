@@ -1,4 +1,5 @@
-const Tools = ({ hiddenClassT, classT }) => {
+const Tools = ({ hiddenClassT, classT, toggleTools, hiddenBackBtn }) => {
+
   // object
   const toolsObj = [
     {
@@ -50,18 +51,30 @@ const Tools = ({ hiddenClassT, classT }) => {
 
   const ToolsLi = (toolsObj) => {
     return toolsObj.map((eachTool) => (
-      <li key={eachTool.src}>
+      <li key={eachTool.src} className={eachTool.class}>
         <img className={eachTool.class} src={eachTool.src} alt={eachTool.alt} />
       </li>
     ));
   };
 
+
+  //function
+
+  const handleClickCloseT = () => {
+    toggleTools();
+  };
+  
   return (
-    <div>
-      <ul className={`hero__tools ${hiddenClassT} ${classT}`}>
-        {ToolsLi(toolsObj)}
-      </ul>
-    </div>
+    <>
+      <button className={`closeToolsBtn ${hiddenBackBtn}`} onClick={handleClickCloseT}>
+        <span>Volver</span>
+      </button>
+      <div>
+        <ul className={`hero__tools ${hiddenClassT} ${classT}`}>
+          {ToolsLi(toolsObj)}
+        </ul>
+      </div>
+    </>
   );
 };
 

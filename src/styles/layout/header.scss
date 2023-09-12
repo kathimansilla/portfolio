@@ -4,24 +4,219 @@
   padding: 15px;
   border-bottom: solid 1px white;
   transition: all 1s ease-in;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 15px;
+  @media screen and (min-width: 1024px) {
+    height: unset;
+    position: relative;
+    &:hover {
+      .header__logo__link {
+        font-size: 1.3rem;
+      }
+    }
+  }
   &::before {
-    @include before__background(1, top, none)
+    @include before__background(1, top, none);
   }
-  &__logo__link {
-    color: gray;
-    text-decoration: none;
-    font-size: 1.2rem;
-  }
-  &:hover {
-    .header__logo__link {
+  &__logo {
+    height: 15px;
+    @media screen and (min-width: 1024px) {
+      height: unset;
+    }
+    &__link {
+      color: gray;
+      text-decoration: none;
       font-size: 1.3rem;
+      position: absolute;
+      top: 10px;
+      @media screen and (min-width: 1024px) {
+        position: unset;
+        font-size: 1.2rem;
+      }
     }
   }
 }
 
 //nav
 .header__nav {
+  @include flex(right, unset, column, 0);
+  @media screen and (min-width: 1024px) {
+    @include flex(unset, unset, unset, 0);
+  }
+  &__menu {
+    @include flex(unset, end, column, 0);
+    background-color: transparent;
+    border: none;
+    position: relative;
+    top: -5px;
+    & .menuImgCollapsed {
+      display: none;
+    }
+    &__img {
+      width: 20px;
+      @media screen and (min-width: 1024px) {
+        display: none;
+      }
+    }
+    @media screen and (min-width: 1024px) {
+      @include flex(unset, unset, unset, 0);
+      position: unset;
+    }
+  }
+  & .ulCollapsed {
+    display: none;
+    @media screen and (min-width: 1024px) {
+      @include flex(unset, center, row, 15px);
+    }
+  }
+  & .ul {
+    @include flex(unset, end, column, 2px);
+    background-image: url('../../images/neuronas.jpg');
+    border-radius: 5%;
+    padding: 5px;
+    z-index: 10;
+    width: fit-content;
+    @media screen and (min-width: 1024px) {
+      display: unset;
+    }
+    &__toolsBtn {
+      @include button(rgb(206, 38, 66), .8rem);
+      @media screen and (min-width: 1024px) {
+        @include button(black, .9rem);
+        &:hover {
+          @include button__hover(115px);
+        }
+      }
+    }
+    &__softSkillsBtn {
+      @include button(rgb(206, 38, 66), .8rem);
+      @media screen and (min-width: 1024px) {
+        @include button(black, .9rem);
+        &:hover {
+          @include button__hover(100px);
+        }
+      }
+    }
+    &__cvBtn {
+      @include button(rgb(206, 38, 66), .8rem);
+      @media screen and (min-width: 1024px) {
+        @include button(black, .9rem);
+        &:hover {
+          @include button__hover(90px);
+        }
+      }
+    }
+    &__contactBtn {
+      @include button(rgb(206, 38, 66), .8rem);
+      @media screen and (min-width: 1024px) {
+        @include button(black, .9rem);
+        &:hover {
+          @include button__hover(90px);
+        }
+      }
+    }
+    &__rrssLogos {
+      @include flex(end, center, row, 10px);
+      margin-right: 7px;
+      @media screen and (min-width: 1024px) {
+        @include flex(end, center, row, 15px);
+        margin-right: 0;
+      }
+      &__linkedin {
+        @include flex(unset, center, row, 0);
+        height: 20px;
+        margin-top: 2px;
+        padding: 2px;
+        overflow: hidden;
+        &__link {
+          background-color: rgb(210, 105, 122); 
+          border-radius: 20%;
+          @media screen and (min-width: 1024px) {
+            background-color: transparent;
+            &:hover {
+              background-color: rgb(43, 77, 156);
+              border-radius: 30%;
+              width: 23px;
+            }
+          }
+        }
+        & .linkedinLogo {
+          width: 25px;
+        }
+      }
+      &__github {
+        @include flex(unset, center, row, 0);
+        height: 20px;
+        margin-top: 2px;
+        &__link {
+          background-color: rgb(210, 105, 122);
+          border-radius: 50%;
+          @media screen and (min-width: 1024px) {
+            background-color: transparent;
+            &:hover {
+              background-color: white;
+              border-radius: 50%;
+            }
+          }
+        }
+        & .githubLogo {
+          width: 23px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+// backup
+
+/*
+.header {
+  @include flex(space-between, unset, row, 0);
+  font-family: $fontGeneral;
+  padding: 15px;
+  border-bottom: solid 1px white;
+  transition: all 1s ease-in;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  &::before {
+    @include before__background(1, top, none)
+  }
+  &__logo__link {
+    color: gray;
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+  &:hover {
+    .header__logo__link {
+      font-size: 1.3rem;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    @include flex(space-between, unset, row, 0);
+  }
+}
+
+//nav
+.header__nav {
+  &__menu {
+    background-color: transparent;
+    border: none;
+    &__img {
+      width: 20px
+    }
+  }
+  /*& .ulCollapsed {
+    display: none;
+  }*/ /*
   & .ul {
     @include flex(unset, center, row, 15px);
     &__toolsBtn {
@@ -83,3 +278,4 @@
     }
   }
 }
+*/

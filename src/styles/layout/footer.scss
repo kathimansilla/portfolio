@@ -1,7 +1,7 @@
 .footer {
   @include flex(unset, center, column, 0);
   font-family: $fontGeneral;
-  font-size: .8rem;
+  font-size: 0.7rem;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -11,29 +11,34 @@
   &::before {
     @include before__background(1, bottom, none);
   }
-  &__text {
-    @include flex(unset, unset, row, 5px);
-    &__mail:hover {
-      color: palevioletred;
-      cursor: pointer;
-    }
-  }
-  &__quote {
-    color: gray;
-    text-decoration: none;
-    opacity: 0;
-    transition: opacity 2s ease-out;
-    text-align: center;
-  }
-  &:hover {
-    & .footer__quote {
-      opacity: 1;
-    }
-  }
- 
   @media screen and (min-width: 1024px) {
     @include flex(space-between, unset, row, 0);
     padding: 20px;
+    font-size: 0.8rem;
+  }
+  &__text {
+    @include flex(unset, unset, row, 5px);
+    color: palevioletred;
+    @media screen and (min-width: 1024px) {
+      color: black;
+      &__mail:hover {
+        color: palevioletred;
+        cursor: pointer;
+      }
+    }
+  }
+  &__quote {
+    display: none;
+    @media screen and (min-width: 1024px) {
+      display: inline-block;
+      color: rgb(30, 78, 120);
+      text-decoration: none;
+      opacity: 0;
+      transition: opacity 2s ease-out;
+    }
+    &:hover {
+        opacity: 1;
+    }
   }
 
   /*@include flex(space-between, unset, row, 0);
@@ -67,4 +72,3 @@
     }
   }*/
 }
-
