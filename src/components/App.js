@@ -4,7 +4,6 @@ import Main from './Main';
 import ProjectSection from './ProjectSection';
 import Footer from './Footer';
 import { useState } from 'react';
-import { Route, Routes } from 'react-router-dom';
 
 function App() {
   //state variables
@@ -102,22 +101,15 @@ function App() {
     <>
       <Header toggleTools={toggleTools} toggleSS={toggleSS} />
       <main className="main">
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <Main
-                hiddenClassT={hiddenClassT}
-                hiddenClassSS={hiddenClassSS}
-                classSS={classSS}
-                toggleSS={toggleSS}
-                classT={classT}
-                toggleTools={toggleTools}
-                hiddenBackBtn={hiddenBackBtn}
-              />
-            }
-          />
-        </Routes>
+        <Main
+          hiddenClassT={hiddenClassT}
+          hiddenClassSS={hiddenClassSS}
+          classSS={classSS}
+          toggleSS={toggleSS}
+          classT={classT}
+          toggleTools={toggleTools}
+          hiddenBackBtn={hiddenBackBtn}
+        />
         <ProjectSection
           projects={projects}
           hiddenClassProjects={hiddenClassProjects}
