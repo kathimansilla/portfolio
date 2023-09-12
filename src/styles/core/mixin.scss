@@ -11,10 +11,8 @@
 @mixin button($color, $font-size) {
   background-color: transparent;
   color: $color;
-  //color: gray;
   border: none;
   font-family: $fontGeneral;
-  //font-size: 0.9rem;
   font-size: $font-size;
   margin-top: 1px;
   cursor: pointer;
@@ -47,7 +45,6 @@
 }
 
 //hidden with transition
-
 @mixin hidden__transition() {
   opacity: 0;
   height: 0;

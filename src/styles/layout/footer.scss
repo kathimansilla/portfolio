@@ -7,7 +7,6 @@
   left: 0;
   right: 0;
   padding: 15px;
-  //min-width: 320px;
   &::before {
     @include before__background(1, bottom, none);
   }
@@ -40,35 +39,4 @@
         opacity: 1;
     }
   }
-
-  /*@include flex(space-between, unset, row, 0);
-  font-family: $fontGeneral;
-  font-size: 0.8rem;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 5vh;
-  padding: 15px;
-  &::before {
-    @include before__background(1, bottom, none);
-  }
-  &__text {
-    @include flex(unset, unset, row, 5px);
-    &__mail:hover {
-      color: palevioletred;
-      cursor: pointer;
-    }
-  }
-  &__quote {
-    color: gray;
-    text-decoration: none;
-    opacity: 0;
-    transition: opacity 2s ease-out;
-  }
-  &:hover {
-    & .footer__quote {
-      opacity: 1;
-    }
-  }*/
 }
