@@ -6,7 +6,7 @@
   font-size: .9rem;
   position: relative;
   @media screen and (min-width: 1024px) {
-    height: 55vh;
+    height: 65vh;
     font-size: 1rem;
     &:hover::before {
       opacity: 1;
@@ -62,8 +62,8 @@
       font-size: 0.7rem;
       color: gray;
       @media screen and (min-width: 1024px) {
-        position: absolute;
-        bottom: 80px;
+        position: fixed;
+        bottom: 90px;
         font-size: 0.8rem;
       }
     }
