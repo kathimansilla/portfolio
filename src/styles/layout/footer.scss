@@ -2,7 +2,7 @@
   @include flex(unset, center, column, 0);
   font-family: $fontGeneral;
   font-size: 0.7rem;
-  position: sticky;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
@@ -14,7 +14,6 @@
   @media screen and (min-width: 1024px) {
     @include flex(space-between, unset, row, 0);
     padding: 20px;
-    position: fixed;
     font-size: 0.8rem;
   }
   &__text {

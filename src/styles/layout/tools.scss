@@ -1,8 +1,9 @@
 .hero {
   &__tools {
-    display: none;
-    height: 60vh;
-    transition: display 2s ease-out;
+    //display: none;
+    //height: 60vh;
+    height: 0;
+    opacity: 0;
     @media screen and (min-width: 1024px) {
       @include flex(center, center, row, 30px);
       height: unset;
@@ -14,12 +15,13 @@
       align-content: center;
       flex-wrap: wrap;
       padding: 0 100px 10px;
-      margin-top: 50px;
-      transition: display 2s ease-out;
+      opacity: 1;
+      height: 60vh;
+      transition: all 3s ease-out;
       @media screen and (min-width: 1024px) {
+        height: unset;
         opacity: 1;
         padding: 0;
-        margin-top: 0;
         align-content: unset;
         flex-wrap: unset;
         transition: opacity 2s ease-out;
