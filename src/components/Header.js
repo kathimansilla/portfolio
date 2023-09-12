@@ -8,6 +8,8 @@ const Header = ({ toggleTools, toggleSS }) => {
   //state variables
   const [menuCollapsed, setMenuCollapsed] = useState('ulCollapsed');
   const [menuActive, setMenuActive] = useState('');
+  const [hiddenMenuX, setenuIHiddenMenuX] = useState('menuImgCollapsed');
+  const [hiddenMenuBars, setHiddenMenuBars] = useState('');
 
   //functions
   const handleClickTools = (ev) => {
@@ -15,6 +17,8 @@ const Header = ({ toggleTools, toggleSS }) => {
     toggleTools();
     setMenuCollapsed('ulCollapsed');
     setMenuActive('');
+    setenuIHiddenMenuX('menuImgCollapsed');
+    setHiddenMenuBars('');
   };
 
   const handleClickSS = (ev) => {
@@ -23,6 +27,8 @@ const Header = ({ toggleTools, toggleSS }) => {
     toggleSS(click);
     setMenuCollapsed('ulCollapsed');
     setMenuActive('');
+    setenuIHiddenMenuX('menuImgCollapsed');
+    setHiddenMenuBars('');
   };
 
   const handleClickMenu = (ev) => {
@@ -30,15 +36,21 @@ const Header = ({ toggleTools, toggleSS }) => {
     if (menuCollapsed === 'ulCollapsed') {
       setMenuCollapsed('');
       setMenuActive('ul');
+      setenuIHiddenMenuX('');
+      setHiddenMenuBars('menuImgCollapsed');
     } else {
       setMenuCollapsed('ulCollapsed');
       setMenuActive('');
+      setenuIHiddenMenuX('menuImgCollapsed');
+      setHiddenMenuBars('');
     }
   };
 
   const handleClickCloseMenu = () => {
     setMenuCollapsed('ulCollapsed');
     setMenuActive('');
+    setenuIHiddenMenuX('menuImgCollapsed');
+    setHiddenMenuBars('');
   }
 
   return (
@@ -55,9 +67,9 @@ const Header = ({ toggleTools, toggleSS }) => {
       </div>
       <nav className="header__nav">
         <button className="header__nav__menu" onClick={handleClickMenu}>
-          <img className="header__nav__menu__img" src={menu} alt="menu bars" />
+          <img className={`header__nav__menu__img ${hiddenMenuBars}`} src={menu} alt="menu bars" />
           <img
-            className="header__nav__menu__img menuImgCollapsed"
+            className={`header__nav__menu__img ${hiddenMenuX}`}
             src={x}
             alt="close menu mark"
           />

@@ -4,12 +4,12 @@
 .hero {
   @include flex(center, center, column, 20px);
   font-family: $fontGeneral;
-  min-height: 35vh;
+  min-height: 30vh;
   max-height: 80vh;
   z-index: 1;
   @media screen and (min-width: 1024px) {
     @include flex(center, unset, column, 20px);
-    font-size: 0.9rem;
+    font-size: .9rem;
     margin-top: 0;
   }
   &::before {
@@ -42,13 +42,13 @@
       color: gray;
     }
     & .title {
-      font-size: 1rem;
+      font-size: 1.2rem;
       @media screen and (min-width: 1024px) {
         font-size: 1.5rem;
       }
     }
     & .subTitle {
-      font-size: 0.9rem;
+      font-size: 1rem;
       @media screen and (min-width: 1024px) {
         font-size: 1.2rem;
       }

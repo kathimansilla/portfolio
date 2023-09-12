@@ -18,6 +18,7 @@
   &__text {
     @include flex(unset, unset, row, 5px);
     color: palevioletred;
+    font-size: .9rem;
     @media screen and (min-width: 1024px) {
       color: black;
       &__mail:hover {

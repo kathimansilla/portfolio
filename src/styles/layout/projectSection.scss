@@ -3,11 +3,10 @@
   height: 58vh;
   text-align: center;
   font-family: $fontGeneral;
-  font-size: .9rem;
   position: relative;
   @media screen and (min-width: 1024px) {
     height: 63vh;
-    font-size: 1rem;
+    z-index: unset;
     &:hover::before {
       opacity: 1;
     }
@@ -71,8 +70,7 @@
 
 .projects {
   @include flex(center, center, column, 15px);
-  height: 25vh;
-  margin: 0 0 10px;
+  height: 35vh;
   padding: 15px;
   @media screen and (min-width: 1024px) {
     align-items: unset;
@@ -90,9 +88,9 @@
     background-color: transparent;
     box-shadow: 3px 3px 3px 3px rgb(28, 28, 28);
     text-align: center;
-    width: 250px;
+    width: 270px;
     border-radius: 10%;
-    padding: 5px 0;
+    padding: 10px 0;
     @media screen and (min-width: 1024px) {
       @include flex(center, center, column, 10px);
       background-color: rgb(226, 225, 225);
@@ -106,6 +104,7 @@
     }
     & .containerLogos {
       @include flex(unset, unset, row, 10px);
+      cursor: pointer;
       &__item {
         width: 20px;
         @media screen and (min-width: 1024px) {
