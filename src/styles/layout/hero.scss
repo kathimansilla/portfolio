@@ -3,10 +3,9 @@
 
 .hero {
   @include flex(center, center, column, 20px);
-  margin-top: 20px;
   font-family: $fontGeneral;
   min-height: 35vh;
-  max-height: 90vh;
+  max-height: 80vh;
   z-index: 1;
   @media screen and (min-width: 1024px) {
     @include flex(center, unset, column, 20px);
