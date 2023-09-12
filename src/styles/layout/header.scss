@@ -85,7 +85,7 @@
     &__toolsBtn {
       @include button(rgb(206, 38, 66), .8rem);
       @media screen and (min-width: 1024px) {
-        @include button(gray, .9rem);
+        @include button(black, .9rem);
         &:hover {
           @include button__hover(115px);
         }
@@ -94,7 +94,7 @@
     &__softSkillsBtn {
       @include button(rgb(206, 38, 66), .8rem);
       @media screen and (min-width: 1024px) {
-        @include button(gray, .9rem);
+        @include button(black, .9rem);
         &:hover {
           @include button__hover(100px);
         }
@@ -103,7 +103,7 @@
     &__cvBtn {
       @include button(rgb(206, 38, 66), .8rem);
       @media screen and (min-width: 1024px) {
-        @include button(gray, .9rem);
+        @include button(black, .9rem);
         &:hover {
           @include button__hover(90px);
         }
@@ -112,7 +112,7 @@
     &__contactBtn {
       @include button(rgb(206, 38, 66), .8rem);
       @media screen and (min-width: 1024px) {
-        @include button(gray, .9rem);
+        @include button(black, .9rem);
         &:hover {
           @include button__hover(90px);
         }
