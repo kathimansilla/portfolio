@@ -2,12 +2,13 @@
   &__tools {
     height: 0;
     opacity: 0;
-    transform: matrix(1, 0, 0, 5, 0, 0);
+    transform: matrix(1, 0, 0, 3, 0, 0);
     @media screen and (min-width: 1024px) {
       @include flex(center, center, row, 30px);
       height: unset;
       opacity: 0;
       transition: opacity 2s ease-out;
+      transform: unset;
     }
     &.active {
       @include flex(center, center, row, 30px);
@@ -17,18 +18,19 @@
       opacity: 1;
       height: 50vh;
       transform: matrix(1, 0, 0, 1, 0, 0);
-      transition-property: transform, opacity;
-      transition-delay: 1s, 1s;
-      transition-duration: 1s, 2s;
+      transition-property: transform, opacity, height;
+      transition-delay: 0s, .3s, 0s;
+      transition-duration: 1s, 1.5s, 5s;
       background-color: rgb(219, 219, 219);
-      //transition: all 3s ease-out;
       @media screen and (min-width: 1024px) {
+        background-color: unset;
         height: unset;
         opacity: 1;
         padding: 0;
         align-content: unset;
         flex-wrap: unset;
         transition: opacity 2s ease-out;
+        transform: unset;
       }
     }
     &__item {
@@ -72,11 +74,13 @@
   border: none;
   color: black;
   font-size: .9rem;
+  opacity: 1;
+  transition: opacity .5s ease;
   cursor: pointer;
   @media screen and (min-width: 1024px) {
     display: none;
   }
 }
 .hiddenBackBtn {
-  display: none;
+  opacity: 0;
 }

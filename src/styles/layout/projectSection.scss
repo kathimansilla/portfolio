@@ -20,6 +20,7 @@
     opacity: 0;
     @media screen and (min-width: 1024px) {
       display: unset;
+      opacity: unset;
     }
   }
   &__title {
@@ -87,7 +88,7 @@
   &__container {
     @include flex(center, center, column, 5px);
     font-size: 0.8rem;
-    background-color: transparent;
+    background-color: rgb(219, 219, 219);
     box-shadow: 3px 3px 3px 3px rgb(28, 28, 28);
     text-align: center;
     width: 270px;

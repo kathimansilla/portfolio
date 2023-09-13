@@ -1,7 +1,7 @@
 .hero {
   &__softSkills {
     @include flex(center, center, column, 0);
-    font-size: 0.7rem;
+    font-size: .9rem;
     z-index: 2;
     height: 100vh;
     position: fixed;
@@ -35,7 +35,7 @@
         }
       }
       &__item {
-        padding: 5px;
+        padding: 10px 5px;
         text-align: center;
         font-weight: bold;
         color: black;
