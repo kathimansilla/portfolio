@@ -4,6 +4,8 @@
   text-align: center;
   font-family: $fontGeneral;
   position: relative;
+  opacity: 1;
+  transition: opacity .5s ease-in-out;
   @media screen and (min-width: 1024px) {
     height: 63vh;
     z-index: unset;
@@ -15,7 +17,7 @@
     @include before__background(0, bottom, opacity 1s ease-in);
   }
   &.hiddenProjectSection {
-    display: none;
+    opacity: 0;
     @media screen and (min-width: 1024px) {
       display: unset;
     }

@@ -67,7 +67,7 @@ const Tools = ({ hiddenClassT, classT, toggleTools, hiddenBackBtn }) => {
   return (
     <>
       <button className={`closeToolsBtn ${hiddenBackBtn}`} onClick={handleClickCloseT}>
-        <span>Volver</span>
+        <span>Back</span>
       </button>
       <div>
         <ul className={`hero__tools ${hiddenClassT} ${classT}`}>
