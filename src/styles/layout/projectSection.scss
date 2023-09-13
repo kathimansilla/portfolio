@@ -7,14 +7,8 @@
   opacity: 1;
   transition: opacity .5s ease-in-out;
   @media screen and (min-width: 1024px) {
-    height: 63vh;
+    height: 70vh;
     z-index: unset;
-    &:hover::before {
-      opacity: 1;
-    }
-  }
-  &::before {
-    @include before__background(0, bottom, opacity 1s ease-in);
   }
   &.hiddenProjectSection {
     opacity: 0;
