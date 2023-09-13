@@ -7,11 +7,13 @@
   opacity: 1;
   transition: opacity .5s ease-in-out;
   @media screen and (min-width: 1024px) {
-    height: 70vh;
+    height: 60vh;
     z-index: unset;
   }
   &.hiddenProjectSection {
+    height: 0;
     opacity: 0;
+    overflow: hidden;
     @media screen and (min-width: 1024px) {
       display: unset;
       opacity: unset;
