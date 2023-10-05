@@ -1,8 +1,10 @@
 .hero {
+  overflow: visible;
   &__tools {
     height: 0;
     opacity: 0;
     transform: matrix(1, 0, 0, 3, 0, 0);
+    overflow: visible;
     @media screen and (min-width: 1024px) {
       @include flex(center, center, row, 30px);
       height: unset;
@@ -12,16 +14,23 @@
     }
     &.active {
       @include flex(center, center, row, 30px);
+      position: fixed;
+      top: 23%;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      overflow: visible;
       align-content: center;
       flex-wrap: wrap;
       padding: 50px 100px 50px;
-      opacity: 1;
+      opacity: .9;
       height: 50vh;
       transform: matrix(1, 0, 0, 1, 0, 0);
       transition-property: transform, opacity, height;
       transition-delay: 0s, .3s, 0s;
       transition-duration: 1s, 1.5s, 5s;
-      background-color: rgb(219, 219, 219);
+      background-color: rgb(0, 0, 0);
+      z-index: 5;
       @media screen and (min-width: 1024px) {
         background-color: unset;
         height: unset;
@@ -31,6 +40,7 @@
         flex-wrap: unset;
         transition: opacity 2s ease-out;
         transform: unset;
+        position: unset;
       }
     }
     &__item {
@@ -72,7 +82,7 @@
 .closeToolsBtn {
   background-color: transparent;
   border: none;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: .9rem;
   opacity: 1;
   transition: opacity .5s ease;

@@ -1,5 +1,6 @@
 .footer {
   @include flex(unset, center, column, 0);
+  background-color: black;
   font-family: $fontGeneral;
   font-size: 0.7rem;
   position: fixed;
@@ -7,6 +8,7 @@
   left: 0;
   right: 0;
   padding: 15px;
+  height: 5vh;
   &::before {
     @include before__background(1, bottom, none);
   }
@@ -14,15 +16,14 @@
     @include flex(space-between, unset, row, 0);
     padding: 20px;
     font-size: 0.8rem;
+    height: 3vh;
   }
   &__text {
     @include flex(unset, unset, row, 5px);
-    color: palevioletred;
+    color: #a35ca5;
     font-size: .9rem;
     @media screen and (min-width: 1024px) {
-      color: black;
       &__mail:hover {
-        color: palevioletred;
         cursor: pointer;
       }
     }
@@ -31,7 +32,7 @@
     display: none;
     @media screen and (min-width: 1024px) {
       display: inline-block;
-      color: rgb(30, 78, 120);
+      color: white;
       text-decoration: none;
       opacity: 0;
       transition: opacity 2s ease-out;

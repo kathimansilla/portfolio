@@ -1,14 +1,14 @@
 .header {
   @include flex(space-between, unset, row, 0);
+  background-color: #3F0E41;
   font-family: $fontGeneral;
   padding: 15px;
-  border-bottom: solid 1px white;
   transition: all 1s ease-in;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 15px;
+  height: 3vh;
   @media screen and (min-width: 1024px) {
     height: unset;
     position: relative;
@@ -75,50 +75,51 @@
   }
   & .ul {
     @include flex(unset, end, column, 8px);
-    background-image: url('../../images/neuronas.jpg');
+    //background-image: url('../../images/neuronas.jpg');
     box-shadow: 2px 2px 0 2px black;
     border-radius: 5%;
     padding: 5px;
     z-index: 10;
     width: fit-content;
+    background-color: #3F0E41;
     @media screen and (min-width: 1024px) {
       display: unset;
     }
     &__toolsBtn {
-      @include button(rgb(206, 38, 66), .8rem);
+      @include button(#a35ca5, .8rem);
       font-weight: 500;
       @media screen and (min-width: 1024px) {
-        @include button(black, .9rem);
+        @include button(#a35ca5, .9rem);
         &:hover {
           @include button__hover(115px);
         }
       }
     }
     &__softSkillsBtn {
-      @include button(rgb(206, 38, 66), .8rem);
+      @include button(#a35ca5, .8rem);
       font-weight: 500;
       @media screen and (min-width: 1024px) {
-        @include button(black, .9rem);
+        @include button(#a35ca5, .9rem);
         &:hover {
           @include button__hover(100px);
         }
       }
     }
     &__cvBtn {
-      @include button(rgb(206, 38, 66), .8rem);
+      @include button(#a35ca5, .8rem);
       font-weight: 500;
       @media screen and (min-width: 1024px) {
-        @include button(black, .9rem);
+        @include button(#a35ca5, .9rem);
         &:hover {
-          @include button__hover(90px);
+          @include button__hover(40px);
         }
       }
     }
     &__contactBtn {
-      @include button(rgb(206, 38, 66), .8rem);
+      @include button(#a35ca5, .8rem);
       font-weight: 500;
       @media screen and (min-width: 1024px) {
-        @include button(black, .9rem);
+        @include button(#a35ca5, .9rem);
         &:hover {
           @include button__hover(90px);
         }
