@@ -28,7 +28,7 @@ function App() {
       id: 2,
       name: "Rick and Morty's characters",
       url_project:
-        'http://kathimansilla.github.io/modulo-3-evaluacion-final-kathimansilla/',
+        'https://kathimansilla.github.io/rick-and-morty-characters/',
       url_github:
         'https://github.com/kathimansilla/modulo-3-evaluacion-final-kathimansilla',
     },
