@@ -72,8 +72,8 @@ function App() {
   ];
 
   //functions
-  const toggleTools = () => {
-    if (hiddenClassT === '') {
+  const toggleTools = (SSopen) => {
+    if (hiddenClassT === '' || SSopen) {
       setTimeout(() => setHiddenClassT('hiddent'), 500);
       setClassT('');
       setHiddenBackBtn('hiddenBackBtn');

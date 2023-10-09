@@ -10,6 +10,7 @@ const Header = ({ toggleTools, toggleSS }) => {
   const [menuActive, setMenuActive] = useState('');
   const [hiddenMenuX, setenuIHiddenMenuX] = useState('menuImgCollapsed');
   const [hiddenMenuBars, setHiddenMenuBars] = useState('');
+  const [ssOpen, setSsOpen] = useState(false);
 
   //functions
   const handleClickTools = (ev) => {
@@ -29,6 +30,8 @@ const Header = ({ toggleTools, toggleSS }) => {
     setMenuActive('');
     setenuIHiddenMenuX('menuImgCollapsed');
     setHiddenMenuBars('');
+    setSsOpen(true);
+    toggleTools(ssOpen);
   };
 
   const handleClickMenu = (ev) => {
