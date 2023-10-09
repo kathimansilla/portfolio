@@ -7,7 +7,7 @@
   font-family: $fontGeneral;
   height: 25vh;
   overflow: visible;
-  margin-top: 3vh;
+  margin-top: 1vh;
   @media screen and (min-width: 1024px) {
     @include flex(center, unset, column, 20px);
     background-color: #320d33;
