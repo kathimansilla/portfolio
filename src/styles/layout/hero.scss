@@ -5,14 +5,15 @@
   @include flex(center, center, column, 20px);
   background-color: #3F0E41;
   font-family: $fontGeneral;
-  //height: 25vh;
+  height: 25vh;
   overflow: visible;
+  margin-top: 3vh;
   @media screen and (min-width: 1024px) {
     @include flex(center, unset, column, 20px);
     background-color: #320d33;
     font-size: 0.9rem;
-    margin-top: 0;
-    height: 35vh;
+    margin-top: 5vh;
+    height: 40vh;
   }
   &::before {
     @include before__background(1, top, opacity 1s ease-in);
@@ -32,7 +33,7 @@
       font-size: 1.3rem;
       color: white;
       @media screen and (min-width: 1024px) {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
       }
     }
     & .subTitle {

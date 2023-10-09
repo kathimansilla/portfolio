@@ -10,8 +10,7 @@
   right: 0;
   height: 3vh;
   @media screen and (min-width: 1024px) {
-    height: unset;
-    position: relative;
+    height: unset;  
     &:hover {
       .header__logo__link {
         font-size: 1.3rem;
