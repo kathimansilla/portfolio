@@ -17,6 +17,14 @@ function App() {
   const projects = [
     {
       id: 1,
+      name: 'taskflow | Gestor de tareas',
+      url_project:
+        'https://kathimansilla.github.io/taskflow/',
+      url_github:
+        'https://github.com/kathimansilla/taskflow',
+    },
+    {
+      id: 2,
       name: 'API RESTful',
       url_project:
         'https://github.com/kathimansilla/modulo-4-evaluacion-final-kathimansilla',
@@ -24,19 +32,12 @@ function App() {
         'https://github.com/kathimansilla/modulo-4-evaluacion-final-kathimansilla',
     },
     {
-      id: 2,
+      id: 3,
       name: "Rick and Morty's characters",
       url_project:
         'https://kathimansilla.github.io/rick-and-morty-characters/',
       url_github:
         'https://github.com/kathimansilla/modulo-3-evaluacion-final-kathimansilla',
-    },
-    {
-      id: 3,
-      name: "Townsville's projects",
-      url_project: 'https://project-promo-t-module-4-team-4.onrender.com/',
-      url_github:
-        'https://github.com/kathimansilla/project-promo-t-module-4-team-4',
     },
     {
       id: 4,
@@ -48,6 +49,13 @@ function App() {
     },
     {
       id: 5,
+      name: "Townsville's projects",
+      url_project: 'https://project-promo-t-module-4-team-4.onrender.com/',
+      url_github:
+        'https://github.com/kathimansilla/project-promo-t-module-4-team-4',
+    },
+    {
+      id: 6,
       name: 'Some Disney characters',
       url_project:
         'https://kathimansilla.github.io/Some-Disney-characters/',
@@ -55,14 +63,14 @@ function App() {
         'https://github.com/kathimansilla/modulo-2-evaluacion-final-kathimansilla',
     },
     {
-      id: 6,
+      id: 7,
       name: 'Villanas del código',
       url_project: 'http://beta.adalab.es/project-promo-t-module-1-team-2/',
       url_github:
         'https://github.com/kathimansilla/project-promo-t-module-1-team-2',
     },
     {
-      id: 7,
+      id: 8,
       name: 'Anonymous Proxy',
       url_project:
         'https://kathimansilla.github.io/Anonymous-Proxy/',
