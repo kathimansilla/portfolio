@@ -62,7 +62,6 @@ const Tools = ({ hiddenClassT, classT, toggleTools, hiddenBackBtn }) => {
 
 
   //function
-
   const handleClickCloseT = () => {
     toggleTools();
   };

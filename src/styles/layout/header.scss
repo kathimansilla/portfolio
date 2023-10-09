@@ -1,16 +1,17 @@
 .header {
   @include flex(space-between, unset, row, 0);
-  background-color: #3F0E41;
+  background-color: #320d33;
   font-family: $fontGeneral;
   padding: 15px;
   transition: all 1s ease-in;
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
   height: 3vh;
   @media screen and (min-width: 1024px) {
     height: unset;  
+    position: relative;
     &:hover {
       .header__logo__link {
         font-size: 1.3rem;
@@ -88,7 +89,7 @@
       @include button(#a35ca5, .8rem);
       font-weight: 500;
       @media screen and (min-width: 1024px) {
-        @include button(#a35ca5, .9rem);
+        @include button(#C0C0C0, .9rem);
         &:hover {
           @include button__hover(115px);
         }
@@ -98,7 +99,7 @@
       @include button(#a35ca5, .8rem);
       font-weight: 500;
       @media screen and (min-width: 1024px) {
-        @include button(#a35ca5, .9rem);
+        @include button(#C0C0C0, .9rem);
         &:hover {
           @include button__hover(100px);
         }
@@ -108,7 +109,7 @@
       @include button(#a35ca5, .8rem);
       font-weight: 500;
       @media screen and (min-width: 1024px) {
-        @include button(#a35ca5, .9rem);
+        @include button(#C0C0C0, .9rem);
         &:hover {
           @include button__hover(40px);
         }
@@ -118,7 +119,7 @@
       @include button(#a35ca5, .8rem);
       font-weight: 500;
       @media screen and (min-width: 1024px) {
-        @include button(#a35ca5, .9rem);
+        @include button(#C0C0C0, .9rem);
         &:hover {
           @include button__hover(90px);
         }
@@ -163,7 +164,7 @@
           @media screen and (min-width: 1024px) {
             background-color: transparent;
             &:hover {
-              background-color: white;
+              background-color: black;
               border-radius: 50%;
             }
           }

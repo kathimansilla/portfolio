@@ -12,18 +12,18 @@
     height: 35vh;
     padding-bottom: 110px;
     margin-bottom: 50px;
+    background-color: #320d33;
   }
   &.hiddenProjectSection {
     height: 0;
     opacity: 0;
-    //overflow: hidden;
     @media screen and (min-width: 1024px) {
       display: unset;
       opacity: unset;
     }
   }
   &__title {
-    color: white;
+    color: #C0C0C0;
     text-shadow: 2px 2px 2px black;
     margin: 20px 0 20px;
   }
@@ -87,7 +87,8 @@
   &__container {
     @include flex(center, center, column, 5px);
     font-size: 0.8rem;
-    background-color: #d5c2d6;
+    background-color: black;
+    color: white;
     box-shadow: 3px 3px 3px 3px rgb(28, 28, 28);
     text-align: center;
     width: 270px;
@@ -97,10 +98,13 @@
       @include flex(center, center, column, 10px);
       box-shadow: 3px 3px 3px 3px #270e29;
       transition: all 0.3s ease-in-out;
+      background-color: black;
+      color: white;
+      z-index: 1;
       &:hover {
         transform: scale(1.1);
-        box-shadow: 0px 0px 5px 2px white;
-        background-color: white;
+        box-shadow: 0px 0px 5px 2px #C0C0C0;
+        background-color: #1b1919;
         
       }
     }

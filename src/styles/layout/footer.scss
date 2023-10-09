@@ -20,10 +20,11 @@
   }
   &__text {
     @include flex(unset, unset, row, 5px);
-    color: #a35ca5;
+    color: #C0C0C0;
     font-size: .9rem;
     @media screen and (min-width: 1024px) {
       &__mail:hover {
+        color: white;
         cursor: pointer;
       }
     }

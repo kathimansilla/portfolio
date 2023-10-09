@@ -9,7 +9,6 @@ const Main = ( {hiddenClassT, hiddenClassSS, toggleSS, classSS, classT, toggleTo
             <h1 className="title">Katherina Mansilla</h1>
             <h2 className="subTitle">Full-stack Developer Web</h2>
             <TypingText delay={70}/>
-            <button className="aboutMeBtn">About me</button>
         </div>
         <SoftSkills classSS={classSS} hiddenClassSS={hiddenClassSS} toggleSS={toggleSS}/>
         <Tools classT={classT} hiddenClassT={hiddenClassT} toggleTools={toggleTools} hiddenBackBtn={hiddenBackBtn} />

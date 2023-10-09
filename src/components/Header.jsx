@@ -1,4 +1,4 @@
-import linkedin from '../images/linkedinSinFondo.png';
+import linkedin from '../images/linkedin.svg';
 import github from '../images/githubw.svg';
 import menu from '../images/bars.svg';
 import x from '../images/xmark.svg';
@@ -10,7 +10,6 @@ const Header = ({ toggleTools, toggleSS }) => {
   const [menuActive, setMenuActive] = useState('');
   const [hiddenMenuX, setenuIHiddenMenuX] = useState('menuImgCollapsed');
   const [hiddenMenuBars, setHiddenMenuBars] = useState('');
-  const [ssOpen, setSsOpen] = useState(false);
 
   //functions
   const handleClickTools = (ev) => {
@@ -30,8 +29,7 @@ const Header = ({ toggleTools, toggleSS }) => {
     setMenuActive('');
     setenuIHiddenMenuX('menuImgCollapsed');
     setHiddenMenuBars('');
-    setSsOpen(true);
-    toggleTools(ssOpen);
+    toggleTools(true);
   };
 
   const handleClickMenu = (ev) => {

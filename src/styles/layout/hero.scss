@@ -7,12 +7,12 @@
   font-family: $fontGeneral;
   height: 25vh;
   overflow: visible;
-  margin-top: 1vh;
+  //margin-top: 1vh;
   @media screen and (min-width: 1024px) {
     @include flex(center, unset, column, 20px);
     background-color: #320d33;
     font-size: 0.9rem;
-    margin-top: 5vh;
+    margin-top: 0vh;
     height: 40vh;
   }
   &::before {
@@ -50,18 +50,8 @@
         width: 80%;
         font-weight: 500;
         text-align: center;
-        color: white;
+        color: #C0C0C0;
       }
-    }
-    & .aboutMeBtn {
-      display: none;
-      border: none;
-      background-color: black;
-      color: white;
-      margin-top: 15px;
-      width: 800px;
-      text-align: center;
-      margin-top: 5px;
     }
   }
 }
