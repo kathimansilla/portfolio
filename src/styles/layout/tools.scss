@@ -1,10 +1,10 @@
 .hero {
-  overflow: visible;
+  //overflow: hidden;
   &__tools {
     height: 0;
     opacity: 0;
     transform: matrix(1, 0, 0, 3, 0, 0);
-    overflow: visible;
+    overflow: hidden;
     @media screen and (min-width: 1024px) {
       @include flex(center, center, row, 30px);
       height: unset;
@@ -19,7 +19,7 @@
       bottom: 0;
       right: 0;
       left: 0;
-      overflow: visible;
+      //overflow: visible;
       align-content: center;
       flex-wrap: wrap;
       padding: 50px 100px 50px;

@@ -5,7 +5,7 @@
   @include flex(center, center, column, 20px);
   background-color: #3F0E41;
   font-family: $fontGeneral;
-  height: 25vh;
+  //height: 25vh;
   overflow: visible;
   @media screen and (min-width: 1024px) {
     @include flex(center, unset, column, 20px);
