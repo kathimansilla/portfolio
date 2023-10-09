@@ -42,7 +42,7 @@ function App() {
       id: 4,
       name: 'Adalab Tech Summit',
       url_project:
-        'https://kathimansilla.github.io/project-promo-T-module-2-team-4/',
+        'https://kathimansilla.github.io/Adalab-Tech-Summit/',
       url_github:
         'https://github.com/kathimansilla/project-promo-T-module-2-team-4',
     },
@@ -50,7 +50,7 @@ function App() {
       id: 5,
       name: 'Some Disney characters',
       url_project:
-        'https://kathimansilla.github.io/modulo-2-evaluacion-final-kathimansilla/',
+        'https://kathimansilla.github.io/Some-Disney-characters/',
       url_github:
         'https://github.com/kathimansilla/modulo-2-evaluacion-final-kathimansilla',
     },
@@ -65,7 +65,7 @@ function App() {
       id: 7,
       name: 'Anonymous Proxy',
       url_project:
-        'https://kathimansilla.github.io/modulo-1-evaluacion-final-kathimansilla/',
+        'https://kathimansilla.github.io/Anonymous-Proxy/',
       url_github:
         'https://github.com/kathimansilla/modulo-1-evaluacion-final-kathimansilla',
     },
