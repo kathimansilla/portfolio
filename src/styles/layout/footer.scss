@@ -1,6 +1,6 @@
 .footer {
   @include flex(unset, center, column, 0);
-  background-color: black;
+  background-color: #F5F5DC;
   font-family: $fontGeneral;
   font-size: 0.7rem;
   position: fixed;
@@ -20,11 +20,11 @@
   }
   &__text {
     @include flex(unset, unset, row, 5px);
-    color: #C0C0C0;
+    color: black;
     font-size: .9rem;
     @media screen and (min-width: 1024px) {
       &__mail:hover {
-        color: white;
+        color: gray;
         cursor: pointer;
       }
     }
@@ -33,7 +33,7 @@
     display: none;
     @media screen and (min-width: 1024px) {
       display: inline-block;
-      color: white;
+      color: gray;
       text-decoration: none;
       opacity: 0;
       transition: opacity 2s ease-out;

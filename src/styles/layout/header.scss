@@ -1,6 +1,6 @@
 .header {
   @include flex(space-between, unset, row, 0);
-  background-color: #320d33;
+  background-color: #F5F5DC;
   font-family: $fontGeneral;
   padding: 15px;
   transition: all 1s ease-in;
@@ -75,7 +75,6 @@
   }
   & .ul {
     @include flex(unset, end, column, 8px);
-    //background-image: url('../../images/neuronas.jpg');
     box-shadow: 2px 2px 0 2px black;
     border-radius: 5%;
     padding: 5px;
@@ -164,7 +163,7 @@
           @media screen and (min-width: 1024px) {
             background-color: transparent;
             &:hover {
-              background-color: black;
+              background-color: white;
               border-radius: 50%;
             }
           }

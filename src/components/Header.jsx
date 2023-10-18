@@ -1,5 +1,5 @@
 import linkedin from '../images/linkedin.svg';
-import github from '../images/githubw.svg';
+import github from '../images/github.svg';
 import menu from '../images/bars.svg';
 import x from '../images/xmark.svg';
 import { useState } from 'react';

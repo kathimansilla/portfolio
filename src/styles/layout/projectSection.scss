@@ -1,6 +1,6 @@
 .projectSection {
   @include flex(unset, unset, column, 0);
-  background-color: #3F0E41;
+  background-color: #F5F5DC;
   height: 60vh;
   text-align: center;
   font-family: $fontGeneral;
@@ -12,7 +12,7 @@
     height: 35vh;
     padding-bottom: 110px;
     margin-bottom: 50px;
-    background-color: #320d33;
+    background-color: #F5F5DC;
   }
   &.hiddenProjectSection {
     height: 0;
@@ -23,8 +23,7 @@
     }
   }
   &__title {
-    color: #C0C0C0;
-    text-shadow: 2px 2px 2px black;
+    color: black;
     margin: 20px 0 20px;
   }
   &__container {
@@ -36,21 +35,25 @@
       font-family: $fontGeneral;
       border: none;
       background-color: transparent;
-      opacity: 0.5;
+      //opacity: 1;
       cursor: pointer;
       &__img {
         transform: rotate(90deg);
         width: 18px;
+        color: black;
         @media screen and (min-width: 1024px) {
           transform: rotate(0deg);
           width: 23px;
+          color: black;
         }
         &--next {
           transform: rotate(90deg);
           width: 18px;
+          color: black;
           @media screen and (min-width: 1024px) {
             transform: rotate(0deg);
             width: 23px;
+            color: black;
           }
         }
       }

@@ -3,14 +3,14 @@
 
 .hero {
   @include flex(center, center, column, 20px);
-  background-color: #3F0E41;
+  background-color: #F5F5DC;
   font-family: $fontGeneral;
   height: 25vh;
   overflow: visible;
   //margin-top: 1vh;
   @media screen and (min-width: 1024px) {
     @include flex(center, unset, column, 20px);
-    background-color: #320d33;
+    background-color: #F5F5DC;
     font-size: 0.9rem;
     margin-top: 0vh;
     height: 40vh;
@@ -24,21 +24,19 @@
     flex-direction: column;
     gap: 10px;
     padding-top: 50px;
-    font-weight: bold;
-    color: white;
+    color: black;
     @media screen and (min-width: 1024px) {
       padding-top: 20px;
     }
     & .title {
       font-size: 1.3rem;
-      color: white;
       @media screen and (min-width: 1024px) {
         font-size: 1.2rem;
       }
     }
     & .subTitle {
       font-size: 1.1rem;
-      color: white;
+      color: black;
       @media screen and (min-width: 1024px) {
         font-size: 1.2rem;
       }
@@ -50,7 +48,7 @@
         width: 80%;
         font-weight: 500;
         text-align: center;
-        color: #C0C0C0;
+        color: #5c5c5c;
       }
     }
   }
