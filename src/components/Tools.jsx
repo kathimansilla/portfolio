@@ -36,8 +36,8 @@ const Tools = ({ hiddenClassT, classT, toggleTools, hiddenBackBtn }) => {
     },
     {
       class: 'hero__tools__item--width2',
-      src: mongoLogo,
-      //src: 'https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg',
+      //src: mongoLogo,
+      src: 'https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg',
       alt: 'mongodb',
     },
     {
