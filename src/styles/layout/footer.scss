@@ -1,6 +1,5 @@
 .footer {
   @include flex(unset, center, column, 0);
-  background-color: #F5F5DC;
   font-family: $fontGeneral;
   font-size: 0.7rem;
   position: fixed;

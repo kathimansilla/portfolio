@@ -3,14 +3,12 @@
 
 .hero {
   @include flex(center, center, column, 20px);
-  background-color: #F5F5DC;
   font-family: $fontGeneral;
   height: 25vh;
   overflow: visible;
   //margin-top: 1vh;
   @media screen and (min-width: 1024px) {
     @include flex(center, unset, column, 20px);
-    background-color: #F5F5DC;
     font-size: 0.9rem;
     margin-top: 0vh;
     height: 40vh;

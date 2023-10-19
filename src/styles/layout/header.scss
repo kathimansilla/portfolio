@@ -1,6 +1,5 @@
 .header {
   @include flex(space-between, unset, row, 0);
-  background-color: #F5F5DC;
   font-family: $fontGeneral;
   padding: 15px;
   transition: all 1s ease-in;

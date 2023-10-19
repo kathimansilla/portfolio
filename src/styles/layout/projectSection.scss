@@ -1,6 +1,5 @@
 .projectSection {
   @include flex(unset, unset, column, 0);
-  background-color: #F5F5DC;
   height: 60vh;
   text-align: center;
   font-family: $fontGeneral;
@@ -12,7 +11,6 @@
     height: 35vh;
     padding-bottom: 110px;
     margin-bottom: 50px;
-    background-color: #F5F5DC;
   }
   &.hiddenProjectSection {
     height: 0;
@@ -101,7 +99,7 @@
       @include flex(center, center, column, 10px);
       box-shadow: 3px 3px 3px 3px #270e29;
       transition: all 0.3s ease-in-out;
-      background-color: black;
+      background-color: #FF6B6B;
       color: white;
       z-index: 1;
       &:hover {
