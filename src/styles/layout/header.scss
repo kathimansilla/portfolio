@@ -74,12 +74,12 @@
   }
   & .ul {
     @include flex(unset, end, column, 8px);
-    box-shadow: 2px 2px 0 2px black;
+    box-shadow: 2px 2px 0 2px rgb(202, 202, 202);
     border-radius: 5%;
     padding: 5px;
     z-index: 10;
     width: fit-content;
-    background-color: #F5F5DC;
+    background-color: #FF6B6B;
     @media screen and (min-width: 1024px) {
       display: unset;
     }
